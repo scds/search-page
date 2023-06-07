@@ -21,7 +21,7 @@ New skills are just a click away. These workshop recordings and online modules w
 
 <div style="display:flex">
 
-<div style="border-style: solid; width: 80%">
+<div style="width: 70%; padding-right: 1em">
 <ul id="results-container">
 
 {% for row in workshops %}
@@ -33,8 +33,28 @@ New skills are just a click away. These workshop recordings and online modules w
 </ul>
 </div>
 
-<div style="border-style: solid; width: 20%">
-test
+<div style="width: 30%; font-size: small">
+<fieldset>
+
+<b>Year</b><br>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">2023</label><br>
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">2022</label><br>
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">2021</label><br>
+
+<b>Series</b><br>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">DMDS - Do More with Digital Scholarship</label><br>
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">DASH - Data Analysis Support Hub</label><br>
+
+
+</fieldset>
 </div>
 
 </div>

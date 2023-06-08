@@ -7,8 +7,11 @@ layout: none
 
   {% for workshop in workshops %}
     {
-      "title"      : "{{ workshop.Title }}",
-      "description": "{{ workshop.Description }}",
+      {% assign title = workshop.Title | strip_newlines | remove: '"' %}
+      "title"      : "{{ title }}",
+
+      {% assign newDescription = workshop.Description | strip_newlines | remove: '"' | remove: '\' %}
+      "description": "{{ newDescription }}",
       "year"       : "{{ workshop.Year }}",
       "software"   : "{{ workshop.Software }}",
       "topic"      : "{{ workshop.Topic }}",

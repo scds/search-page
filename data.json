@@ -5,9 +5,13 @@ layout: none
   {% assign workshops = site.data.workshop_list
   %}
   {% for workshop in workshops %}
-    "{{ workshop.Title }}": {
-      "title"      : "{{ workshop.Title }}",
-      "description": "{{ workshop.Description }}",
+  {% assign title = workshop.Title | strip_newlines | remove: '"' %}
+    "{{ title }}": {
+      "title"      : "{{ title }}",
+
+      {% assign newDescription = workshop.Description | strip_newlines | remove: '"' | remove: '\' %}
+
+      "description": "{{ newDescription }}",
       "year"       : "{{ workshop.Year }}",
       "url"        : "{{ workshop.URL }}",
       "software"   : "{{ workshop.Software }}",

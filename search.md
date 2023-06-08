@@ -67,9 +67,13 @@ New skills are just a click away. These workshop recordings and online modules w
 
 <script>
 var json = "";
-$.getJSON('assets/data/data.json', function(obj) {
+$.getJSON('data.json', function(obj) {
     json = obj;
-    console.log(obj["Getting Started with GitHub and GitHub Pages"]["url"]);
+});
+
+var search = "";
+$.getJSON('search.json', function(obj) {
+    search = obj;
 });
 
 function getProperty(title, prop) {
@@ -81,18 +85,17 @@ var title = "";
 var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-inputt'),
   resultsContainer: document.getElementById('results-container'),
-  json: 'assets/data/search.json',
+  json: "search.json",
   noResultsText: 'No result found!',
   searchResultTemplate: '
   <li> <!-- {title} -->
     <p>
       <a href="{url}">{title}</a>
-      <br>
-      {description}
     </p>
   </li>
   ',
   templateMiddleware: function(prop, value, template) {
+    console.log("test");
     if (prop === 'title') {
       title = value;
     }

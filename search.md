@@ -63,10 +63,20 @@ New skills are just a click away. These workshop recordings and online modules w
 
 <!-- Script pointing to search-script.js -->
 <script src="/assets/js/search-script.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.js"></script>
 
-<!-- Configuration -->
 <script>
+var json = "";
+$.getJSON('./data.json', function(obj) {
+    json = obj;
+    console.log(obj["Getting Started with GitHub and GitHub Pages"]["url"]);
+});
 
+function getProperty(title, prop) {
+  return json[title][prop];    
+}
+
+var title = "";
 
 var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-inputt'),
@@ -74,22 +84,31 @@ var sjs = SimpleJekyllSearch({
   json: '/search.json',
   noResultsText: 'No result found!',
   searchResultTemplate: '
-  <li>
+  <li> <!-- {title} -->
     <p>
       <a href="{url}">{title}</a>
       <br>
-      {tags}
+      {description}
     </p>
   </li>
   ',
   templateMiddleware: function(prop, value, template) {
+    if (prop === 'title') {
+      title = value;
+    }
+
     if (prop === 'tags') {
       var strr = "";
       function createHTMLTag(tag) { return `<p class="label">${tag}</p>`;}
       function createTag(tag) { strr = strr.concat(" ", createHTMLTag(tag));  }
+      value = value.split(", ");
       value.forEach(createTag);
-      console.log(strr);
+      const regex = /\*/i;
       return strr;
+    }
+
+    if (prop === 'url' || prop === 'description') {
+      return getProperty(title, prop);
     }
   }
 })

@@ -23,13 +23,7 @@ New skills are just a click away. These workshop recordings and online modules w
 
 <div style="width: 70%; padding-right: 1em">
 <ul id="results-container">
-
-{% for row in workshops %}
-<li>
-<p><a href="{{row["url"]}}">{{row["title"]}}</a><br>{{row["description"]}}</p>
-</li>
-{% endfor %}
-
+Search!
 </ul>
 </div>
 
@@ -87,6 +81,8 @@ var sjs = SimpleJekyllSearch({
   resultsContainer: document.getElementById('results-container'),
   json: "search.json",
   noResultsText: 'No result found!',
+  limit: 100,
+  fuzzy: true,
   searchResultTemplate: '
   <li> <!-- {title} -->
     <p>

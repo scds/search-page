@@ -1,0 +1,18 @@
+---
+layout: none
+---
+[
+  {% assign workshops = site.data.workshop_list 
+  %}
+
+  {% for workshop in workshops %}
+    {
+      "title"      : "{{ workshop.Title }}",
+      "description": "{{ workshop.Description }}",
+      "year"       : "{{ workshop.Year }}",
+      "software"   : "{{ workshop.Software }}",
+      "topic"      : "{{ workshop.Topic }}",
+      "series"     : "{{ workshop.Series }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

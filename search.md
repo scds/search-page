@@ -67,7 +67,7 @@ New skills are just a click away. These workshop recordings and online modules w
 
 <script>
 var json = "";
-$.getJSON('./data.json', function(obj) {
+$.getJSON('assets/data/data.json', function(obj) {
     json = obj;
     console.log(obj["Getting Started with GitHub and GitHub Pages"]["url"]);
 });
@@ -81,7 +81,7 @@ var title = "";
 var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-inputt'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/search.json',
+  json: 'assets/data/search.json',
   noResultsText: 'No result found!',
   searchResultTemplate: '
   <li> <!-- {title} -->

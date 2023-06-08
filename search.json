@@ -7,13 +7,11 @@ layout: none
   %}
 
   {% for workshop in workshops %}
-    {
-
+    { {% assign splitTags = workshop.tags | split: ", " %}
       "title"      : "{{ workshop.title }}",
       "description": "{{ workshop.description }}",
       "url"        : "{{ workshop.url }}",
-      "tags"       : "{{ workshop.tags }}"
-
-    } {% unless forloop.last %},{% endunless %}
+      "tags"       : [{% for tag in splitTags %}"{{tag}}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
+    }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

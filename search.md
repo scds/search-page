@@ -66,11 +66,31 @@ New skills are just a click away. These workshop recordings and online modules w
 
 <!-- Configuration -->
 <script>
+
+
 var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-inputt'),
   resultsContainer: document.getElementById('results-container'),
   json: '/search.json',
   noResultsText: 'No result found!',
-  searchResultTemplate: '<li><p><a href="{url}">{title}</a><br>{description}</p></li>'
+  searchResultTemplate: '
+  <li>
+    <p>
+      <a href="{url}">{title}</a>
+      <br>
+      {tags}
+    </p>
+  </li>
+  ',
+  templateMiddleware: function(prop, value, template) {
+    if (prop === 'tags') {
+      var strr = "";
+      function createHTMLTag(tag) { return `<p class="label">${tag}</p>`;}
+      function createTag(tag) { strr = strr.concat(" ", createHTMLTag(tag));  }
+      value.forEach(createTag);
+      console.log(strr);
+      return strr;
+    }
+  }
 })
 </script>

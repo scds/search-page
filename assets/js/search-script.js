@@ -153,9 +153,9 @@
   }
   
   function search (crit) {
-    if (!crit) {
-      return []
-    }
+    // if (!crit) {
+    //   return []
+    // }
     return findMatches(data, crit, opt.searchStrategy, opt).sort(opt.sort)
   }
   
@@ -171,10 +171,17 @@
   
   function findMatches (data, crit, strategy, opt) {
     const matches = []
-    for (let i = 0; i < data.length && matches.length < opt.limit; i++) {
-      const match = findMatchesInObject(data[i], crit, strategy, opt)
-      if (match) {
-        matches.push(match)
+
+    if(crit) {
+      for (let i = 0; i < data.length && matches.length < opt.limit; i++) {
+        const match = findMatchesInObject(data[i], crit, strategy, opt)
+        if (match) {
+          matches.push(match)
+        }
+      }
+    } else {
+      for (let i = 0; i < data.length && matches.length < opt.limit; i++) {
+        matches.push(data[i])
       }
     }
     return matches
@@ -394,7 +401,11 @@
       options.searchInput.addEventListener('input', function (e) {
         if (isWhitelistedKey(e.which)) {
           emptyResultsContainer()
-          debounce(function () { search(e.target.value) }, options.debounceTime)
+          if(e.target.value == "") {
+            debounce(function () { search("") }, options.debounceTime)
+          } else {
+            debounce(function () { search(e.target.value) }, options.debounceTime)
+          }
         }
       })
     }
@@ -418,7 +429,7 @@
     }
   
     function isValidQuery (query) {
-      return query && query.length > 0
+      return query && query.length > 0 || query == ""
     }
   
     function isWhitelistedKey (key) {

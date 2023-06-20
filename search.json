@@ -2,7 +2,7 @@
 layout: none
 ---
 [
-  {% assign workshops = site.data.workshop_list 
+  {% assign workshops = site.data.workshop_list | sort: "Title"
   %}
 
   {% for workshop in workshops %}

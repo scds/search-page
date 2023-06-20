@@ -91,7 +91,6 @@ var sjs = SimpleJekyllSearch({
   </li>
   ',
   templateMiddleware: function(prop, value, template) {
-    console.log("test");
     if (prop === 'title') {
       title = value;
     }

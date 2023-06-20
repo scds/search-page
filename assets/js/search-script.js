@@ -106,6 +106,7 @@
   }
   
   const data = []
+  let matchLength = 0
   let opt = {}
   
   opt.fuzzy = false
@@ -307,6 +308,7 @@
     let options = {
       searchInput: null,
       resultsContainer: null,
+      loadMore: null,
       json: [],
       success: Function.prototype,
       searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
@@ -408,24 +410,34 @@
           }
         }
       })
+
       debounce(function () { search("") }, options.debounceTime)
     }
   
     function search (query) {
+      opt.limit = options.limit
       if (isValidQuery(query)) {
         emptyResultsContainer()
         render(_$Repository_4.search(query), query)
       }
     }
   
-    function render (results, query) {
+    function render (results, query, initLen = 0) {
       const len = results.length
       if (len === 0) {
         return appendToResultsContainer(options.noResultsText)
       }
-      for (let i = 0; i < len; i++) {
+      for (let i = initLen; i < len; i++) {
         results[i].query = query
         appendToResultsContainer(_$Templater_7.compile(results[i]))
+      }
+      if(len >= opt.limit) {
+        appendToResultsContainer(`<button type="button" id="loadMore" class="btn btn-outline">Load More...</button>`)
+        document.getElementById("loadMore").addEventListener('click', function(e) {
+          opt.limit += 50
+          document.getElementById("loadMore").remove();
+          render(_$Repository_4.search(query), query, len)
+        })
       }
     }
   

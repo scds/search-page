@@ -408,6 +408,7 @@
           }
         }
       })
+      debounce(function () { search("") }, options.debounceTime)
     }
   
     function search (query) {

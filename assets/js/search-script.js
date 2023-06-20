@@ -380,6 +380,41 @@
     function initWithJSON (json) {
       _$Repository_4.put(json)
       registerInput()
+
+      const years = [];
+      const series = [];
+
+      let yearsContainer = document.getElementById('yearsFilters')
+      let seriesContainer = document.getElementById('seriesFilters')
+
+      for(let i = 0; i < json.length; i++) {
+        if(!years.includes(json[i].year)) {
+          years.push(json[i].year)
+        }
+
+        if(!series.includes(json[i].series)) {
+          series.push(json[i].series)
+        }
+      }
+
+      years.sort()
+      series.sort()
+
+      for(let i = 0; i < years.length; i++) {
+        let html = `
+          <input type="checkbox" id="year${years[i]}">
+          <label for="year${years[i]}">${years[i]}</label><br>
+        `
+        appendToContainer(html, yearsContainer)
+      }
+
+      for(let i = 0; i < series.length; i++) {
+        let html = `
+          <input type="checkbox" id="series${series[i]}">
+          <label for="series${series[i]}">${series[i]}</label><br>
+        `
+        appendToContainer(html, seriesContainer)
+      }
     }
   
     function initWithURL (url) {
@@ -397,6 +432,10 @@
   
     function appendToResultsContainer (text) {
       options.resultsContainer.innerHTML += text
+    }
+
+    function appendToContainer(text, container) {
+      container.innerHTML += text
     }
   
     function registerInput () {

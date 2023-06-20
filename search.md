@@ -7,10 +7,6 @@ nav_order: 2
 <!-- https://jekyllrb.com/tutorials/csv-to-table/ -->
 <!-- https://github.com/christian-fei/Simple-Jekyll-Search -->
 
-{% assign workshops = site.data.workshop_list 
-    | sort: "title" 
-%}
-
 # Online Learning
 
 New skills are just a click away. These workshop recordings and online modules will teach you about data analysis, digital scholarship, innovative software, and more.
@@ -27,25 +23,21 @@ Search!
 </ul>
 </div>
 
+
 <div style="width: 30%; font-size: small">
 <fieldset>
 
+<div id="yearsFilters">
+
 <b>Year</b><br>
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<label for="vehicle1">2023</label><br>
 
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<label for="vehicle1">2022</label><br>
+</div>
 
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<label for="vehicle1">2021</label><br>
+<div id="seriesFilters">
 
 <b>Series</b><br>
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<label for="vehicle1">DMDS - Do More with Digital Scholarship</label><br>
 
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<label for="vehicle1">DASH - Data Analysis Support Hub</label><br>
+</div>
 
 
 </fieldset>

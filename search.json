@@ -6,15 +6,17 @@ layout: none
   %}
 
   {% for workshop in workshops %}
-    {
-      {% assign title = workshop.Title | strip_newlines | remove: '"' %}
-      "title"      : "{{ title }}",
+    {% if workshop.URL != "NA" %}
+      {
+        {% assign title = workshop.Title | strip_newlines | remove: '"' %}
+        "title"      : "{{ title }}",
 
-      {% assign newDescription = workshop.Description | strip_newlines | remove: '"' | remove: '\' %}
-      "year"       : "{{ workshop.Year }}",
-      "software"   : "{{ workshop.Software }}",
-      "topic"      : "{{ workshop.Topic }}",
-      "series"     : "{{ workshop.Series }}"
-    }{% unless forloop.last %},{% endunless %}
+        {% assign newDescription = workshop.Description | strip_newlines | remove: '"' | remove: '\' %}
+        "year"       : "{{ workshop.Year }}",
+        "software"   : "{{ workshop.Software }}",
+        "topic"      : "{{ workshop.Topic }}",
+        "series"     : "{{ workshop.Series }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endif %}
   {% endfor %}
 ]

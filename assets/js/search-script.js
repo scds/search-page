@@ -11,6 +11,28 @@
     compile: compile,
     setOptions: setOptions
   }
+
+  var filters = {
+    "years": [],
+    "series": []
+  }
+
+  function hasFilter() {
+    if(filters["years"].length != 0) {
+      return true
+    } else if(filters["series"].length != 0) {
+      return true
+    }
+
+    return false;
+  }
+
+  function inFilter(filter, value) {
+    if(filters[filter].includes(value)) {
+      return true
+    }
+    return false
+  }
   
   const options = {}
   options.pattern = /\{(.*?)\}/g
@@ -176,12 +198,25 @@
     if(crit) {
       for (let i = 0; i < data.length && matches.length < opt.limit; i++) {
         const match = findMatchesInObject(data[i], crit, strategy, opt)
+
+        if(hasFilter() && match) {
+          if(!inFilter("years", match.year) && !inFilter("series", match.series)) {
+            continue
+          }
+        }
+
         if (match) {
           matches.push(match)
         }
       }
     } else {
       for (let i = 0; i < data.length && matches.length < opt.limit; i++) {
+        if(hasFilter()) {
+          if(!inFilter("years", data[i].year) && !inFilter("series", data[i].series)) {
+            continue
+          }
+        }
+
         matches.push(data[i])
       }
     }
@@ -376,7 +411,37 @@
       typeof options.success === 'function' && options.success.call(rv)
       return rv
     }
+
+    function filterUpdate(e) {
+      if(e.target.checked) {
+        const id = e.target.id
+        const info = id.split(";")
+        filters[info[0]].push(info[1])
+      } else {
+        const id = e.target.id
+        const info = id.split(";")
+
+        const index = filters[info[0]].indexOf(info[1])
+        filters[info[0]].splice(index, 1)
+      }
+      
+      search(options.searchInput.value)
+    }
   
+    function addFilter(name, filter, container) {
+      for(let i = 0; i < filter.length; i++) {
+        let html = `
+          <input type="checkbox" id="${name};${filter[i]}">
+          <label for="${name};${filter[i]}">${filter[i]}</label><br>
+        `
+        appendToContainer(html, container)
+      }
+
+      for(let i = 0; i < filter.length; i++) {
+        document.getElementById(`${name};${filter[i]}`).addEventListener('change', filterUpdate)
+      }
+    }
+
     function initWithJSON (json) {
       _$Repository_4.put(json)
       registerInput()
@@ -400,21 +465,8 @@
       years.sort()
       series.sort()
 
-      for(let i = 0; i < years.length; i++) {
-        let html = `
-          <input type="checkbox" id="year${years[i]}">
-          <label for="year${years[i]}">${years[i]}</label><br>
-        `
-        appendToContainer(html, yearsContainer)
-      }
-
-      for(let i = 0; i < series.length; i++) {
-        let html = `
-          <input type="checkbox" id="series${series[i]}">
-          <label for="series${series[i]}">${series[i]}</label><br>
-        `
-        appendToContainer(html, seriesContainer)
-      }
+      addFilter("years", years, yearsContainer)
+      addFilter("series", series, seriesContainer)
     }
   
     function initWithURL (url) {

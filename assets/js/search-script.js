@@ -13,12 +13,12 @@
   }
 
   var filters = {
-    "years": [],
+    "year": [],
     "series": []
   }
 
   function hasFilter() {
-    if(filters["years"].length != 0) {
+    if(filters["year"].length != 0) {
       return true
     } else if(filters["series"].length != 0) {
       return true
@@ -27,11 +27,16 @@
     return false;
   }
 
-  function inFilter(filter, value) {
-    if(filters[filter].includes(value)) {
-      return true
+  function inFilter(value) {
+    for(const filterKey in filters) {
+      if(filters[filterKey].length != 0) {
+        if(!filters[filterKey].includes(value[filterKey])) {
+          return false
+        }
+      }
     }
-    return false
+
+    return true
   }
   
   const options = {}
@@ -200,7 +205,7 @@
         const match = findMatchesInObject(data[i], crit, strategy, opt)
 
         if(hasFilter() && match) {
-          if(!inFilter("years", match.year) && !inFilter("series", match.series)) {
+          if(!inFilter(match)) {
             continue
           }
         }
@@ -211,8 +216,8 @@
       }
     } else {
       for (let i = 0; i < data.length && matches.length < opt.limit; i++) {
-        if(hasFilter()) {
-          if(!inFilter("years", data[i].year) && !inFilter("series", data[i].series)) {
+        if(hasFilter() && data[i]) {
+          if(!inFilter(data[i])) {
             continue
           }
         }
@@ -465,7 +470,7 @@
       years.sort()
       series.sort()
 
-      addFilter("years", years, yearsContainer)
+      addFilter("year", years, yearsContainer)
       addFilter("series", series, seriesContainer)
     }
   

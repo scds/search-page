@@ -13,7 +13,10 @@ layout: none
           {% assign newDescription = workshop.Description | strip_newlines | remove: '"' | remove: '\' %}
 
           "description": "{{ newDescription }}",
-          "year"       : "{{ workshop.Year }}",
+
+          {% assign year = workshop.Date | split: ", " | last %}
+
+          "year"       : "{{ year }}",
           "url"        : "{{ workshop.URL }}",
           "software"   : "{{ workshop.Software }}",
           "topic"      : "{{ workshop.Topic }}",

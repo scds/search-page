@@ -48,8 +48,8 @@ Search!
 </div>
 
 <!-- Script pointing to search-script.js -->
-<script src="/assets/javascript/search-script.js" type="text/javascript"></script>
-<script src="/assets/javascript/jquery.js"></script>
+<script src="{{github_repo_url}}/assets/javascript/search-script.js" type="text/javascript"></script>
+<script src="{{github_repo_url}}/assets/javascript/jquery.js"></script>
 
 <script>
 var json = "";

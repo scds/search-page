@@ -1,6 +1,6 @@
 title: Introduction to Python # *** Enter workshop title here 
-github_repo_url: "https://learn.scds.ca/workshop-index-mockup/" # *** Enter workshop URL (in github pages) here
-gh_edit_repository: "https://github.com/scds/search-page" # *** Enter the github URL for your repo
+github_repo_url: "https://learn.scds.ca/search-page/" # *** Enter workshop URL (in github pages) here
+gh_edit_repository: "https://github.com/scds/search-page/" # *** Enter the github URL for your repo
 ga_tracking: "" # *** This needs to be set up in Google Analytics once you know the website URL (ask Jay to do this). Then the tracking code needs to be taken from Google Analytics and pasted here.  
 
 subtitle: ""

@@ -48,8 +48,8 @@ Search!
 </div>
 
 <!-- Script pointing to search-script.js -->
-<script src="{{site.github_repo_url}}assets/javascript/search-script.js" type="text/javascript"></script>
-<script src="{{site.github_repo_url}}assets/javascript/jquery.js"></script>
+<script src="../assets/javascript/search-script.js" type="text/javascript"></script>
+<script src="../assets/javascript/jquery.js" type="text/javascript"></script>
 
 <script>
 var json = "";
@@ -68,6 +68,21 @@ function getProperty(title, prop) {
 
 var title = "";
 
+function getOGImageFromURL(urlInput) {
+  $.ajax({
+      url: urlInput,
+			error: function() {
+				  return "https://t3.ftcdn.net/jpg/03/35/13/14/360_F_335131435_DrHIQjlOKlu3GCXtpFkIG1v0cGgM9vJC.jpg";
+			}, 
+      success: function(response){
+          return "https://t3.ftcdn.net/jpg/03/35/13/14/360_F_335131435_DrHIQjlOKlu3GCXtpFkIG1v0cGgM9vJC.jpg";
+      },
+      complete: function(){
+          return "https://t3.ftcdn.net/jpg/03/35/13/14/360_F_335131435_DrHIQjlOKlu3GCXtpFkIG1v0cGgM9vJC.jpg";
+      }
+  });
+}
+
 var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-inputt'),
   resultsContainer: document.getElementById('results-container'),
@@ -78,7 +93,10 @@ var sjs = SimpleJekyllSearch({
   searchResultTemplate: '
   <li> <!-- {title} -->
     <p>
-      <a href="{url}">{title}</a>
+      <a href="{url}">
+        {title}
+        <img src="{getOGImageFromURL}" width="100%" style="border: 1px solid #000;">
+      </a>
     </p>
   </li>
   ',
@@ -99,6 +117,10 @@ var sjs = SimpleJekyllSearch({
 
     if (prop === 'url' || prop === 'description') {
       return getProperty(title, prop);
+    }
+
+    if (prop === 'getOGImageFromURL') {
+      return getOGImageFromURL(getProperty(title, prop));
     }
   }
 })

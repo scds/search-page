@@ -7,6 +7,10 @@ nav_order: 2
 <!-- https://jekyllrb.com/tutorials/csv-to-table/ -->
 <!-- https://github.com/christian-fei/Simple-Jekyll-Search -->
 
+<style>
+    a {target="_top";}
+</style>
+
 # Online Learning
 
 New skills are just a click away. These workshop recordings and online modules will teach you about data analysis, digital scholarship, innovative software, and more.

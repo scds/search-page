@@ -8,7 +8,7 @@ nav_order: 2
 <!-- https://github.com/christian-fei/Simple-Jekyll-Search -->
 
 <style>
-    a {target="_top";}
+a {target="_top";}
 </style>
 
 # Online Learning

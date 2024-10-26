@@ -15,7 +15,7 @@ nav_order: 2
       return style.sheet;
    })();
 
-   sheet.insertRule("a { target: _top }", 1);
+   sheet.insertRule("a { target: _top }");
 </script>
 
 # Online Learning

@@ -7,17 +7,6 @@ nav_order: 2
 <!-- https://jekyllrb.com/tutorials/csv-to-table/ -->
 <!-- https://github.com/christian-fei/Simple-Jekyll-Search -->
 
-<script type="text/javascript">
-   var sheet = (function() {
-      var style = document.createElement("style");
-      style.appendChild(document.createTextNode(""));
-      document.head.appendChild(style);
-      return style.sheet;
-   })();
-
-   sheet.insertRule("a { target: _top }");
-</script>
-
 # Online Learning
 
 New skills are just a click away. These workshop recordings and online modules will teach you about data analysis, digital scholarship, innovative software, and more.
@@ -89,7 +78,7 @@ var sjs = SimpleJekyllSearch({
   searchResultTemplate: '
   <li> <!-- {title} -->
     <p>
-      <a href="{url}">{title}</a>
+      <a href="{url}" target="_top">{title}</a>
     </p>
   </li>
   ',

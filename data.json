@@ -2,7 +2,7 @@
 layout: none
 ---
   {
-  {% assign workshops = site.data.workshop_list
+  {% assign workshops = site.data.workshop_list_full
   %}
   {% for workshop in workshops %}
     {% if workshop.URL != "NA" %}

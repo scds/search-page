@@ -14,6 +14,36 @@ nav_order: 2
 <div style="display:flex">
 
 <div style="width: 70%; padding-right: 1em">
+
+<div style="display:grid; grid-template-columns: 1fr 1fr 1fr;">
+<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
+  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
+  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
+  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
+</div>
+<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
+  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
+  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
+  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
+</div>
+<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
+  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
+  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
+  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
+</div>
+<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
+  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
+  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.15; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
+  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
+</div>
+<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
+  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
+  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.15; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
+  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
+</div>
+
+</div>
+
 <ul id="results-container">
 Search!
 </ul>

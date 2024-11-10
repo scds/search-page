@@ -2,7 +2,7 @@
 layout: none
 ---
   {
-  {% assign workshops = site.data.workshop_list_full
+  {% assign workshops = site.data.workshop_list
   %}
   {% for workshop in workshops %}
     {% if workshop.URL != "NA" %}
@@ -15,7 +15,6 @@ layout: none
           "description": "{{ newDescription }}",
 
           {% assign year = workshop.Date | split: ", " | last %}
-
           "year"       : "{{ year }}",
           "url"        : "{{ workshop.URL }}",
           "software"   : "{{ workshop.Software }}",

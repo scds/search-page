@@ -477,6 +477,7 @@
     function initWithURL (url) {
       _$JSONLoader_2.load(url, function (err, json) {
         if (err) {
+          console.log(err)
           throwError('failed to get JSON (' + err + ')')
         }
         initWithJSON(json)

@@ -10,9 +10,9 @@ nav_order: 2
 <div style="height:800px; overflow-y: clip">
   <div id="search-container" style="height:100%">
     <div style="display:flex; height: 100%">
-      <div style="width: 70%; padding-right: 1em">
+      <div style="width: 70%; height: 100%; padding-right: 1em">
         <input style="width: 100%; height: 40px; border-radius: 10px; border: solid 1px gray; margin-bottom: 1em; padding-left: 1em; padding-right: 1em" type="text" id="search-inputt" placeholder="Search...">
-        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; overflow-y:scroll; height: 100%" id="results-container">
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; overflow-y:scroll; height: 740px" id="results-container">
           <!-- This is where results are automatically filled -->
         </div>
       </div>

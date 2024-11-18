@@ -62,7 +62,7 @@ $.getJSON('data.json', function(obj) {
       searchResultTemplate: '<!--{title}-->
       <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px; height: auto">
         <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
-        <a href="{url}" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</a>
+        <a target="_parent" href="{url}" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</a>
         <p style="margin: 0px; font-family: Arial; font-size: 13px"> {series} - {year} </p>
       </div>
       ',

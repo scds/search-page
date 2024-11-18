@@ -9,63 +9,29 @@ nav_order: 2
 
 <div id="search-container">
 
-<input type="text" id="search-inputt" placeholder="search...">
-
 <div style="display:flex">
 
 <div style="width: 70%; padding-right: 1em">
 
-<div style="display:grid; grid-template-columns: 1fr 1fr 1fr;">
+<input style="width: 100%; height: 40px; border-radius: 10px; border: solid 1px gray; margin-bottom: 1em; padding-left: 1em; padding-right: 1em" type="text" id="search-inputt" placeholder="Search...">
+
+<div style="display:grid; grid-template-columns: 1fr 1fr 1fr;" id="results-container">
 <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
   <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
   <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
   <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
 </div>
-<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
-  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
-  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
-  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
 </div>
-<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
-  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
-  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
-  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
 </div>
-<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
-  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
-  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.15; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
-  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
-</div>
-<div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
-  <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
-  <a href="https://google.com/" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.15; display:block">Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller</a>
-  <p style="margin: 0px; font-family: Arial; font-size: 13px"> Data Analysis Support Hub - 2023 </p>
-</div>
-
-</div>
-
-<ul id="results-container">
-Search!
-</ul>
-</div>
-
 
 <div style="width: 30%; font-size: small">
 <fieldset>
-
 <div id="yearsFilters">
-
 <b>Year</b><br>
-
 </div>
-
 <div id="seriesFilters">
-
 <b>Series</b><br>
-
 </div>
-
-
 </fieldset>
 </div>
 
@@ -101,12 +67,12 @@ var sjs = SimpleJekyllSearch({
   noResultsText: 'No result found!',
   limit: 100,
   fuzzy: true,
-  searchResultTemplate: '
-  <li> <!-- {title} -->
-    <p>
-      <a href="{url}" target="_top">{title}</a>
-    </p>
-  </li>
+  searchResultTemplate: '<!--{title}-->
+  <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px">
+    <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
+    <a href="{url}" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</a>
+    <p style="margin: 0px; font-family: Arial; font-size: 13px"> {series} - {year} </p>
+  </div>
   ',
   templateMiddleware: function(prop, value, template) {
     if (prop === 'title') {
@@ -123,7 +89,7 @@ var sjs = SimpleJekyllSearch({
       return strr;
     }
 
-    if (prop === 'url' || prop === 'description') {
+    if (prop === 'url' || prop === 'description' || prop === 'year' || prop === 'series') {
       return getProperty(title, prop);
     }
   }

@@ -528,9 +528,9 @@
         appendToResultsContainer(_$Templater_7.compile(results[i]))
       }
       if(len >= opt.limit) {
-        appendToResultsContainer(`<button type="button" id="loadMore" class="btn btn-outline">Load More...</button>`)
+        appendToResultsContainer(`<button type="button" id="loadMore" class="btn btn-outline" style="height: max-content; width: max-content; margin-top: 1.5em">Load More...</button>`)
         document.getElementById("loadMore").addEventListener('click', function(e) {
-          opt.limit += 50
+          opt.limit += 30
           document.getElementById("loadMore").remove();
           render(_$Repository_4.search(query), query, len)
         })

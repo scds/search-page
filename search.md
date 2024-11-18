@@ -7,34 +7,28 @@ nav_order: 2
 <!-- https://jekyllrb.com/tutorials/csv-to-table/ -->
 <!-- https://github.com/christian-fei/Simple-Jekyll-Search -->
 
-<div id="search-container">
-
-<div style="display:flex">
-
-<div style="width: 70%; padding-right: 1em">
-
-<input style="width: 100%; height: 40px; border-radius: 10px; border: solid 1px gray; margin-bottom: 1em; padding-left: 1em; padding-right: 1em" type="text" id="search-inputt" placeholder="Search...">
-
-<div style="display:grid; grid-template-columns: 1fr 1fr 1fr;" id="results-container">
-
-<!-- This is where results are automatically filled -->
-
-</div>
-</div>
-
-<div style="width: 30%; font-size: small">
-<fieldset>
-<div id="yearsFilters">
-<b>Year</b><br>
-</div>
-<div id="seriesFilters">
-<b>Series</b><br>
-</div>
-</fieldset>
-</div>
-
-</div>
-
+<div style="height:800px; overflow-y: clip">
+  <div id="search-container" style="height:100%">
+    <div style="display:flex; height: 100%">
+      <div style="width: 70%; padding-right: 1em">
+        <input style="width: 100%; height: 40px; border-radius: 10px; border: solid 1px gray; margin-bottom: 1em; padding-left: 1em; padding-right: 1em" type="text" id="search-inputt" placeholder="Search...">
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; overflow-y:scroll; height: 100%" id="results-container">
+          <!-- This is where results are automatically filled -->
+        </div>
+      </div>
+      <!-- Filters -->
+      <div style="width: 30%; font-size: small">
+        <fieldset>
+        <div id="yearsFilters">
+          <b>Year</b><br>
+        </div>
+        <div id="seriesFilters">
+          <b>Series</b><br>
+        </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Script pointing to search-script.js -->

@@ -61,7 +61,7 @@ $.getJSON('data.json', function(obj) {
       fuzzy: true,
       searchResultTemplate: '<!--{title}-->
       <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px; height: auto;">
-        <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
+        <img src="{image}">
         <a target="_parent" href="{url}" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</a>
         <p style="margin: 0px; font-family: Arial; font-size: 13px"> {series} - {year} </p>
       </div>
@@ -83,6 +83,13 @@ $.getJSON('data.json', function(obj) {
 
         if (prop === 'url' || prop === 'description' || prop === 'year' || prop === 'series') {
           return getProperty(title, prop);
+        }
+
+        if (prop === 'image') {
+          $.get(getProperty(title, 'url'), function (html) {
+            console.log(html);
+          });
+          return "https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png";
         }
       }
     })

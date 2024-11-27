@@ -12,7 +12,7 @@ nav_order: 2
     <div style="display:flex; height: 100%">
       <div style="width: 70%; height: 100%; padding-right: 1em">
         <input style="width: 100%; height: 40px; border-radius: 10px; border: solid 1px gray; margin-bottom: 1em; padding-left: 1em; padding-right: 1em" type="text" id="search-inputt" placeholder="Search...">
-        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; overflow-y:scroll; height: 740px" id="results-container">
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: max-content; overflow-y:scroll; height: 740px" id="results-container">
           <!-- This is where results are automatically filled -->
         </div>
       </div>
@@ -60,7 +60,7 @@ $.getJSON('data.json', function(obj) {
       limit: 30,
       fuzzy: true,
       searchResultTemplate: '<!--{title}-->
-      <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px; height: auto">
+      <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px; height: auto;">
         <img src="https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png">
         <a target="_parent" href="{url}" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</a>
         <p style="margin: 0px; font-family: Arial; font-size: 13px"> {series} - {year} </p>

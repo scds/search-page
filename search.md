@@ -57,7 +57,7 @@ $.getJSON('data.json', function(obj) {
       resultsContainer: document.getElementById('results-container'),
       json: search,
       noResultsText: 'No result found!',
-      limit: 30,
+      limit: 12,
       fuzzy: true,
       searchResultTemplate: '<!--{title}, {url}-->
       <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px; height: auto;">

@@ -62,7 +62,7 @@ $.getJSON('data.json', function(obj) {
       searchResultTemplate: '<!--{title}, {url}-->
       <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px; height: auto;">
         <a target="_parent" href="{url}" style="font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">
-        <object data="{image}" type="image/png" height="auto" width="100%">
+        <object loading="lazy" data="{image}" type="image/png" height="auto" width="100%">
           <img loading="lazy" src="assets/img/unknownImageLocation.png" height="100%">
         </object>
         <p style="margin-top: 5px; margin-bottom: 0px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</p>

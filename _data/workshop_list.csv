@@ -1,92 +1,92 @@
-Title,Description,Instructor,Date,URL,Software,Topic,Series
-3D Modelling and Printing,TODO,John Fink; Britt Sostar,"May 19, 2023",https://scds.github.io/dmds-22-23/3dprinting.html,TODO,TODO,Do More with Digital Scholarship
-Building Digital Exhibits: A Roundtable Celebrating the Launch of Omeka S at McMaster,TODO,TODO,"November 25, 2021",https://scds.github.io/omeka-roundtable/,TODO,TODO,Do More with Digital Scholarship
-Computational Approaches to Text Preparation and Analysis,TODO,Jay Brodeur; Devon Mordell,"February 16, 2023",https://scds.github.io/dmds-22-23/ComputationalText.html,TODO,TODO,Do More with Digital Scholarship
-Data Visualization with Tableau,TODO,Devon Mordell,"November 18, 2020",https://scds.github.io/intro-tableau/,TODO,TODO,Do More with Digital Scholarship
-Data Wrangling with Open Refine,TODO,Jay Brodeur,"February 1, 2020",https://scds.github.io/data-wrangling/,TODO,TODO,Do More with Digital Scholarship
-From Info-Glut to Connected Notes: Obsidian and Digital Note-Taking in Academia,TODO,Andy Roddick,"November 9, 2022",https://scds.github.io/dmds-22-23/Obsidian.html,TODO,TODO,Do More with Digital Scholarship
-"The Infinite Game: ChatGPT, Procedural Generation, and Large Language Models",TODO,John Fink,"May 25, 2023",https://scds.github.io/dmds-22-23/InfiniteGame.html,TODO,TODO,Do More with Digital Scholarship
-Introduction to ArcGIS StoryMaps,TODO,Christine Homuth,TODO,https://scds.github.io/intro-storymaps/,TODO,TODO,Do More with Digital Scholarship
-Introduction to Digital Exhibits with Omeka-S,TODO,Amanda Montague,TODO,https://scds.github.io/Omeka-S/,TODO,TODO,Do More with Digital Scholarship
-Introduction to Digitization,TODO,Krista Jamieson,TODO,https://echo360.ca/media/64eab494-dc95-4b06-8189-4162f5794cb7/public,TODO,TODO,Do More with Digital Scholarship
-Introduction to Twine Games,TODO,Veronica Litt,"February 17, 2023",https://scds.github.io/dmds-22-23/Twine.html,TODO,TODO,Do More with Digital Scholarship
-Journal Publishing,TODO,Gabriela Mircea; Olga Perkovic,"January 26, 2021",https://echo360.ca/media/0c76b46e-74ba-430a-bba6-f35c559d33e1/public,TODO,TODO,Do More with Digital Scholarship
-LaTeX for Human(ist)s,TODO,John Fink; Katie Harding,"March 2, 2022",https://scds.github.io/latex-humanists/,TODO,TODO,Do More with Digital Scholarship
-Named Entity Recognition,TODO,TODO,TODO,https://scds.github.io/text-analysis-2/,TODO,TODO,Do More with Digital Scholarship
-Network Analysis with Gephi,TODO,Devon Mordell,"February 2, 2022",https://scds.github.io/intro-gephi/,TODO,TODO,Do More with Digital Scholarship
-Network Visualizations with Gephi,TODO,Subhanya Sivajothy,"September 28, 2022",https://scds.github.io/dmds-22-23/NetworkViz.html,TODO,TODO,Do More with Digital Scholarship
-"Open Everything! A Panel on the Whats, Hows, and Ifs of Open Scholarship",TODO,Jay Brodeur; Jeffrey Demaine; Danica Evering; John Fink; Joanne Kehoe; Isaac Pratt,"October 27, 2022",https://scds.github.io/dmds-22-23/OpenEverything.html,TODO,TODO,Do More with Digital Scholarship
-Podcasts: A New Way to Mobilize Your Knowledge,TODO,Veronica Litt; Elaine Westenhoefer,TODO,https://scds.github.io/podcasting/,TODO,TODO,Do More with Digital Scholarship
-Predatory Publishing: Reducing the Odds of Falling Prey,TODO,Neera Bhatnagar; Olga Perkovic,"November 24, 2021",https://scds.github.io/Predatory-Publishing/,TODO,TODO,Do More with Digital Scholarship
-Pre-Processing Digitized Texts,TODO,TODO,TODO,https://scds.github.io/text-analysis-1/,TODO,TODO,Do More with Digital Scholarship
-Roundtable on Digital Scholarship,TODO,TODO,TODO,https://echo360.ca/media/4bf1930d-3bfa-4a75-bc70-88e70b696c9e/public,TODO,TODO,Do More with Digital Scholarship
-Social Media Research Ethics 1 - Preliminary Considerations,TODO,Emily Van Haren; Andrea Zeffiro; Isaac Pratt; Jay Brodeur,"January 18, 2021",https://scds.github.io/sm-research-ethics/module1.html,TODO,TODO,Do More with Digital Scholarship
-Social Media Research Ethics 2 - Project Design,TODO,Emily Van Haren; Andrea Zeffiro; Isaac Pratt; Jay Brodeur,"February 22, 2021",https://scds.github.io/sm-research-ethics/module2.html,TODO,TODO,Do More with Digital Scholarship
-Social Media Research Ethics Roundtable - Power and Provocations,TODO,TODO,TODO,https://scds.github.io/sm-research-ethics/module3.html,TODO,TODO,Do More with Digital Scholarship
-Teaching with Digital Tools and Approaches: A Sherman Centre Roundtable,TODO,Jay Brodeur; Danica Evering; Veronica Litt; Subhanya Sivajothy,"May 24, 2023",https://scds.github.io/dmds-22-23/DigitalTools.html,TODO,TODO,Do More with Digital Scholarship
-Textual Analysis with Voyant,TODO,Devon Mordell,"January 26, 2022",https://scds.github.io/intro-voyant/,TODO,TODO,Do More with Digital Scholarship
-Visualizing Texts with Voyant Tools,TODO,Subhanya Sivajothy,"November 2, 2022",https://scds.github.io/dmds-22-23/Voyant.html,TODO,TODO,Do More with Digital Scholarship
-What Is Digital Scholarship? Panel,TODO,Andrea Zeffiro; Jay Brodeur; Jess Rauchberg; Vivek Jadon; Maddie Brockbank; Danica Evering; Shaila Jamal,"September 20, 2022",https://scds.github.io/dmds-22-23/WhatIsDS.html,TODO,TODO,Do More with Digital Scholarship
-Cleaning Messy Data with Python and Pandas,TODO,Maya Flannery,"April 6, 2023",https://scds.github.io/dash-webinars/datacleaning.html,TODO,TODO,Data Analysis Support Hub
-Creating High-Impact Figures with Adobe Illustrator,TODO,Elaine Westenhoefer,TODO,https://echo360.ca/media/5f179134-8790-4c69-89fb-10d89ef6b1f4/public,TODO,TODO,Data Analysis Support Hub
-Data Visualization in R using ggplot2,TODO,Subhanya Sivajothy,TODO,https://scds.github.io/dash-webinars/ggplot2.html,TODO,TODO,Data Analysis Support Hub
-Data Visualization with MATLAB,TODO,Subhanya Sivajothy,TODO,https://scds.github.io/dash-webinars/Matlab.html,TODO,TODO,Data Analysis Support Hub
-Getting started with GitHub and GitHub Pages,TODO,Jay Brodeur,TODO,https://scds.github.io/github-pages/,TODO,TODO,Data Analysis Support Hub
-How to Copy ArcGIS Online Content Between Accounts,TODO,Christine Homuth,TODO,https://scds.github.io/dash-webinars/Copy_ArcGIS_Content.html,TODO,TODO,Data Analysis Support Hub
-Hypothesis Testing and Regression Analysis in R,TODO,Simran Kaur,"March 30, 2022",https://scds.github.io/hypothesis-testing-regression-analysis-r/,TODO,TODO,Data Analysis Support Hub
-Intermediate Python Programming,TODO,Isaac Kinley,"October 28, 2022",https://scds.github.io/dash-webinars/IntermediatePython.html,TODO,TODO,Data Analysis Support Hub
-Introduction to ArcGIS Online,TODO,Christine Homuth,"February 17, 2022",https://scds.github.io/intro-arcgis-online/,TODO,TODO,Data Analysis Support Hub
-Introduction to Business Analyst Online,TODO,Christine Homuth,TODO,https://scds.github.io/intro-to-bao/,TODO,TODO,Data Analysis Support Hub
-Introduction to Designing Effective Data Visualizations,TODO,Subhanya Sivajoth,"February 10, 2022",https://scds.github.io/intro-data-viz/,TODO,TODO,Data Analysis Support Hub
-Introduction to GeoSpatial Data,TODO,Christine Homuth,TODO,https://scds.github.io/dash-webinars/Intro-Geospatial-Data.html,TODO,TODO,Data Analysis Support Hub
-Introduction to GIS,TODO,Christine Homuth,TODO,https://scds.github.io/intro-gis/,TODO,TODO,Data Analysis Support Hub
-Introduction to LaTeX,TODO,Katie Harding; John Fink,"November 16, 2021",https://scds.github.io/intro-latex/,TODO,TODO,Data Analysis Support Hub
-Introduction to Machine Learning with Python,TODO,Isaac Kinley,TODO,https://scds.github.io/dash-webinars/Machine-learning-python.html,TODO,TODO,Data Analysis Support Hub
-Introduction to Microsoft Excel,TODO,Simran Kaur,"February 3, 2022",https://echo360.ca/media/db851cff-003e-49ce-a8a1-ac75bca524a1/public,TODO,TODO,Data Analysis Support Hub
-Introduction to Python Programming,TODO,Vivek Jadon,"October 20, 2022",https://scds.github.io/dash-webinars/IntroPython.html,TODO,TODO,Data Analysis Support Hub
-Introduction to R Programming,TODO,Isaac Kinley,TODO,https://scds.github.io/dash-webinars/rprog.html,TODO,TODO,Data Analysis Support Hub
-Introduction to SAS,TODO,TODO,TODO,https://echo360.ca/media/0a95c3ba-c288-4412-9977-bfd5d9cf78c2/public,TODO,TODO,Data Analysis Support Hub
-Introduction to SPSS,TODO,Vivek Jadon; Simran Kaur,"December 22, 2022",https://echo360.ca/media/cdb3d78a-0097-41d5-907b-1849254c879f/public,TODO,TODO,Data Analysis Support Hub
-Machine Learning with R: K-Means Clustering,TODO,Shaila Jamal,"October 3, 2022",https://scds.github.io/dash-webinars/Kmeans.html,TODO,TODO,Data Analysis Support Hub
-Machine Learning with R: Linear Regression,TODO,Shaila Jamal,"October 21, 2022",https://scds.github.io/dash-webinars/linearregression.html,TODO,TODO,Data Analysis Support Hub
-Machine Learning with R: Logistic Regression,TODO,Shaila Jamal,"November 3, 2022",https://scds.github.io/dash-webinars/logisticregression.html,TODO,TODO,Data Analysis Support Hub
-Machine Learning with R: Random Forest Classification Approach,TODO,Shaila Jamal,"February 21, 2023",https://scds.github.io/dash-webinars/Random-Forest.html,TODO,TODO,Data Analysis Support Hub
-Machine Learning with R: SVM Classification,TODO,Shaila Jamal,"November 7, 2022",https://scds.github.io/dash-webinars/SVM.html,TODO,TODO,Data Analysis Support Hub
-Making the Move from ArcMap to ArcPro,TODO,Christine Homuth,"November 1, 2022",https://scds.github.io/dash-webinars/ArcGISPro.html,TODO,TODO,Data Analysis Support Hub
-Version Control with Git,TODO,John Fink,"April 11, 2023",https://scds.github.io/dash-webinars/vcgit.html,TODO,TODO,Data Analysis Support Hub
-Visual Data Analysis with Microsoft Excel,TODO,Shaila Jamal,"March 14, 2023",https://scds.github.io/dash-webinars/vda.html,TODO,TODO,Data Analysis Support Hub
-Before You Dig: Finding and Reusing Datasets,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/reuse.html,TODO,TODO,Research Data Management
-Best Practices for Managing Data in your Research,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/intro.html,TODO,TODO,Research Data Management
-Building a Data Management Plan for your Research Project,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/dmp.html,TODO,TODO,Research Data Management
-Data Privacy Best Practices,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/privacy.html,TODO,TODO,Research Data Management
-Depositing and Sharing Data on McMaster Dataverse,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/dataverse.html,TODO,TODO,Research Data Management
-Essentials of Open Data Sharing,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/sharing.html,TODO,TODO,Research Data Management
-Organize Your Research Projects with the Open Science Framework,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/osf.html,TODO,TODO,Research Data Management
-Qualitative Data: Practices for RDM Planning and Sharing,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/qualitative.html,TODO,TODO,Research Data Management
-Securely Managing and Publishing Sensitive Data,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/sensitive.html,TODO,TODO,Research Data Management
-"Set Yourself up for Research Success: Manage your Data like a Pro, and Get your own ORCiD Profile",TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/researchsuccess,TODO,TODO,Research Data Management
-Strategies for Research Data Storage and Backup,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/storage.html,TODO,TODO,Research Data Management
-What are ORCiDs and DOIs - and Why Do I Need Them?,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/doi-orcid.html,TODO,TODO,Research Data Management
-What You Need to Know about the New Tri-Agency Research Data Management Policy,TODO,Danica Evering; Isaac Pratt,TODO,https://scds.github.io/intro-rdm/triagency.html,TODO,TODO,Research Data Management
-"Glitch: Disability, Feminism, Technology",TODO,Adan Jerreat-Poole,"January 19, 2023",https://scds.github.io/ds-bytes/Glitch.html,TODO,TODO,DS Bytes
-How to Lie with Data,TODO,Vass Bednar; Cal Biruk; Jeffrey Demaine; Saman Goudarzi; Christine Homuth; Subhanya Sivajothy; Jay Brodeur; Andrea Zeffiro,"January 31, 2023",https://scds.github.io/ds-bytes/Howtoliewithdata.html,TODO,TODO,DS Bytes
-The Value of Visuals in Science Communication,TODO,Mark Belan,"February 8, 2023",https://scds.github.io/ds-bytes/ScienceCommunication.html,TODO,TODO,DS Bytes
-Urban Heat Islands and Social Inequalities: A Data-Driven Story,TODO,Nael Shiab; Isabelle Bouchard,"February 14, 2023",https://scds.github.io/ds-bytes/UrbanHeatIslands.html,TODO,TODO,DS Bytes
-EQ vs IQ: Testing Gendered AI in Apple's Siri,TODO,Lai-Tze Fan,"March 21, 2023",https://scds.github.io/ds-bytes/EQIQ.html,TODO,TODO,DS Bytes
-Design Principles for Data Visualization,TODO,Juan Velasco,"March 5, 2021",https://scds.github.io/data-visualization-principles/,TODO,TODO,Relevant Research
-Feminist Data Workshop,TODO,Caroline Sinders,"April 6, 2021",https://scds.github.io/building-feminist-data/,TODO,TODO,Relevant Research
-Research Beyond Academia,TODO,Mihaela Gruia,"November 13, 2020",https://scds.github.io/research-beyond-academia/,TODO,TODO,Relevant Research
-Telling Data-Driven Stories: Lessons from data journalism,TODO,Roberto Rocha,"January 11, 2021",https://scds.github.io/data-driven-stories/,TODO,TODO,Relevant Research
-Transcending Mental Models,TODO,Brian Southwell,TODO,https://scds.github.io/transcending-mental-models/,TODO,TODO,Relevant Research
-Digital Networking and You,TODO,S.M Mukarram Nainar; Alex Schaap,TODO,https://echo360.ca/media/2c508787-bddb-4678-9c63-505adc933a5a/public,TODO,TODO,Software Freedom Series
-Maintaining Your Digital Privacy,TODO,S.M Mukarram Nainar; Alex Schaap,"November 18, 2021",https://echo360.ca/media/9f2bc6af-a3ac-45e9-b50d-af2964108162/public,TODO,TODO,Software Freedom Series
-Getting Started with Text Preparation and Analysis,TODO,Alexandra Provo; Jay Brodeur,TODO,https://jasonbrodeur.github.io/dsi-text-prep/,TODO,TODO,ARL Digital Scholarship Institute
-A Guide to Data and Statistical Sources from Statistics Canada,TODO,Vivek Jadon,TODO,https://libguides.mcmaster.ca/c.php?g=703562&p=5002203,TODO,TODO,LibGuides
-Business Data and Statistics,TODO,TODO,TODO,https://libguides.mcmaster.ca/c.php?g=704161,TODO,TODO,LibGuides
-Data Visualization,TODO,Christine Homuth,TODO,https://libguides.mcmaster.ca/dataviz,TODO,TODO,LibGuides
-GIS and GeoSpatial Data,TODO,TODO,TODO,https://libguides.mcmaster.ca/GIS,TODO,TODO,LibGuides
-Science Communication and Digital Scholarship: A SCDS Graduate Resident Panel,TODO,Cameron Anderson; Duygu Ertemin; Brianne Morgan; Akacia Propst,"May 4, 2022",https://scds.github.io/2022-grevents/ScienceCommunication.html,TODO,TODO,Special Events
-Exploring Barriers to Misinformation Interventions in Public Libraries: A Special Guest Lecture by Abeer Siddiqui,TODO,Abeer Siddiqui,"May 4, 2022",https://scds.github.io/2022-grevents/siddiqui.html,TODO,TODO,Special Events
-"Content Creators, Digital Labour, and Online Identities: A SCDS Graduate Resident Panel",TODO,Emma Croll-Baehre; Jess Rauchberg; Adrianna Michell; Jessalynn Keller,"May 30, 2022",https://scds.github.io/2022-grevents/DigitalActivism.html,TODO,TODO,Special Events
-Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller,TODO,Jessalynn Keller,"May 30, 2022",https://scds.github.io/2022-grevents/DigitalActivism.html,TODO,TODO,Special Events
-Digital Tools in the Humanities and Social Sciences: A Research Roundtable,TODO,TODO,"June 21, 2022",https://scds.github.io/dh-roundtable/,TODO,TODO,Special Events
+Title,Date,URL,Image,Series,Topic,Software
+3D Modelling and Printing,TODO,https://scds.github.io/dmds-22-23/3dprinting.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Building Digital Exhibits: A Roundtable Celebrating the Launch of Omeka S at McMaster,TODO,https://scds.github.io/omeka-roundtable/,TODO,Do More with Digital Scholarship,TODO,TODO
+Computational Approaches to Text Preparation and Analysis,TODO,https://scds.github.io/dmds-22-23/ComputationalText.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Data Visualization with Tableau,TODO,https://scds.github.io/intro-tableau/,TODO,Do More with Digital Scholarship,TODO,TODO
+Data Wrangling with Open Refine,TODO,https://scds.github.io/data-wrangling/,TODO,Do More with Digital Scholarship,TODO,TODO
+From Info-Glut to Connected Notes: Obsidian and Digital Note-Taking in Academia,TODO,https://scds.github.io/dmds-22-23/Obsidian.html,TODO,Do More with Digital Scholarship,TODO,TODO
+"The Infinite Game: ChatGPT, Procedural Generation, and Large Language Models",TODO,https://scds.github.io/dmds-22-23/InfiniteGame.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Introduction to ArcGIS StoryMaps,TODO,https://scds.github.io/intro-storymaps/,TODO,Do More with Digital Scholarship,TODO,TODO
+Introduction to Digital Exhibits with Omeka-S,TODO,https://scds.github.io/Omeka-S/,TODO,Do More with Digital Scholarship,TODO,TODO
+Introduction to Digitization,TODO,https://echo360.ca/media/64eab494-dc95-4b06-8189-4162f5794cb7/public,TODO,Do More with Digital Scholarship,TODO,TODO
+Introduction to Twine Games,TODO,https://scds.github.io/dmds-22-23/Twine.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Journal Publishing,TODO,https://echo360.ca/media/0c76b46e-74ba-430a-bba6-f35c559d33e1/public,TODO,Do More with Digital Scholarship,TODO,TODO
+LaTeX for Human(ist)s,TODO,https://scds.github.io/latex-humanists/,TODO,Do More with Digital Scholarship,TODO,TODO
+Named Entity Recognition,TODO,https://scds.github.io/text-analysis-2/,TODO,Do More with Digital Scholarship,TODO,TODO
+Network Analysis with Gephi,TODO,https://scds.github.io/intro-gephi/,TODO,Do More with Digital Scholarship,TODO,TODO
+Network Visualizations with Gephi,TODO,https://scds.github.io/dmds-22-23/NetworkViz.html,TODO,Do More with Digital Scholarship,TODO,TODO
+"Open Everything! A Panel on the Whats, Hows, and Ifs of Open Scholarship",TODO,https://scds.github.io/dmds-22-23/OpenEverything.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Podcasts: A New Way to Mobilize Your Knowledge,TODO,https://scds.github.io/podcasting/,TODO,Do More with Digital Scholarship,TODO,TODO
+Predatory Publishing: Reducing the Odds of Falling Prey,TODO,https://scds.github.io/Predatory-Publishing/,TODO,Do More with Digital Scholarship,TODO,TODO
+Pre-Processing Digitized Texts,TODO,https://scds.github.io/text-analysis-1/,TODO,Do More with Digital Scholarship,TODO,TODO
+Roundtable on Digital Scholarship,TODO,https://echo360.ca/media/4bf1930d-3bfa-4a75-bc70-88e70b696c9e/public,TODO,Do More with Digital Scholarship,TODO,TODO
+Social Media Research Ethics 1 - Preliminary Considerations,TODO,https://scds.github.io/sm-research-ethics/module1.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Social Media Research Ethics 2 - Project Design,TODO,https://scds.github.io/sm-research-ethics/module2.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Social Media Research Ethics Roundtable - Power and Provocations,TODO,https://scds.github.io/sm-research-ethics/module3.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Teaching with Digital Tools and Approaches: A Sherman Centre Roundtable,TODO,https://scds.github.io/dmds-22-23/DigitalTools.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Textual Analysis with Voyant,TODO,https://scds.github.io/intro-voyant/,TODO,Do More with Digital Scholarship,TODO,TODO
+Visualizing Texts with Voyant Tools,TODO,https://scds.github.io/dmds-22-23/Voyant.html,TODO,Do More with Digital Scholarship,TODO,TODO
+What Is Digital Scholarship? Panel,TODO,https://scds.github.io/dmds-22-23/WhatIsDS.html,TODO,Do More with Digital Scholarship,TODO,TODO
+Cleaning Messy Data with Python and Pandas,TODO,https://scds.github.io/dash-webinars/datacleaning.html,TODO,Data Analysis Support Hub,TODO,TODO
+Creating High-Impact Figures with Adobe Illustrator,TODO,https://echo360.ca/media/5f179134-8790-4c69-89fb-10d89ef6b1f4/public,TODO,Data Analysis Support Hub,TODO,TODO
+Data Visualization in R using ggplot2,TODO,https://scds.github.io/dash-webinars/ggplot2.html,TODO,Data Analysis Support Hub,TODO,TODO
+Data Visualization with MATLAB,TODO,https://scds.github.io/dash-webinars/Matlab.html,TODO,Data Analysis Support Hub,TODO,TODO
+Getting started with GitHub and GitHub Pages,TODO,https://scds.github.io/github-pages/,TODO,Data Analysis Support Hub,TODO,TODO
+How to Copy ArcGIS Online Content Between Accounts,TODO,https://scds.github.io/dash-webinars/Copy_ArcGIS_Content.html,TODO,Data Analysis Support Hub,TODO,TODO
+Hypothesis Testing and Regression Analysis in R,TODO,https://scds.github.io/hypothesis-testing-regression-analysis-r/,TODO,Data Analysis Support Hub,TODO,TODO
+Intermediate Python Programming,TODO,https://scds.github.io/dash-webinars/IntermediatePython.html,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to ArcGIS Online,TODO,https://scds.github.io/intro-arcgis-online/,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to Business Analyst Online,TODO,https://scds.github.io/intro-to-bao/,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to Designing Effective Data Visualizations,TODO,https://scds.github.io/intro-data-viz/,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to GeoSpatial Data,TODO,https://scds.github.io/dash-webinars/Intro-Geospatial-Data.html,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to GIS,TODO,https://scds.github.io/intro-gis/,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to LaTeX,TODO,https://scds.github.io/intro-latex/,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to Machine Learning with Python,TODO,https://scds.github.io/dash-webinars/Machine-learning-python.html,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to Microsoft Excel,TODO,https://echo360.ca/media/db851cff-003e-49ce-a8a1-ac75bca524a1/public,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to Python Programming,TODO,https://scds.github.io/dash-webinars/IntroPython.html,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to R Programming,TODO,https://scds.github.io/dash-webinars/rprog.html,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to SAS,TODO,https://echo360.ca/media/0a95c3ba-c288-4412-9977-bfd5d9cf78c2/public,TODO,Data Analysis Support Hub,TODO,TODO
+Introduction to SPSS,TODO,https://echo360.ca/media/cdb3d78a-0097-41d5-907b-1849254c879f/public,TODO,Data Analysis Support Hub,TODO,TODO
+Machine Learning with R: K-Means Clustering,TODO,https://scds.github.io/dash-webinars/Kmeans.html,TODO,Data Analysis Support Hub,TODO,TODO
+Machine Learning with R: Linear Regression,TODO,https://scds.github.io/dash-webinars/linearregression.html,TODO,Data Analysis Support Hub,TODO,TODO
+Machine Learning with R: Logistic Regression,TODO,https://scds.github.io/dash-webinars/logisticregression.html,TODO,Data Analysis Support Hub,TODO,TODO
+Machine Learning with R: Random Forest Classification Approach,TODO,https://scds.github.io/dash-webinars/Random-Forest.html,TODO,Data Analysis Support Hub,TODO,TODO
+Machine Learning with R: SVM Classification,TODO,https://scds.github.io/dash-webinars/SVM.html,TODO,Data Analysis Support Hub,TODO,TODO
+Making the Move from ArcMap to ArcPro,TODO,https://scds.github.io/dash-webinars/ArcGISPro.html,TODO,Data Analysis Support Hub,TODO,TODO
+Version Control with Git,TODO,https://scds.github.io/dash-webinars/vcgit.html,TODO,Data Analysis Support Hub,TODO,TODO
+Visual Data Analysis with Microsoft Excel,TODO,https://scds.github.io/dash-webinars/vda.html,TODO,Data Analysis Support Hub,TODO,TODO
+Before You Dig: Finding and Reusing Datasets,TODO,https://scds.github.io/intro-rdm/reuse.html,TODO,Research Data Management,TODO,TODO
+Best Practices for Managing Data in your Research,TODO,https://scds.github.io/intro-rdm/intro.html,TODO,Research Data Management,TODO,TODO
+Building a Data Management Plan for your Research Project,TODO,https://scds.github.io/intro-rdm/dmp.html,TODO,Research Data Management,TODO,TODO
+Data Privacy Best Practices,TODO,https://scds.github.io/intro-rdm/privacy.html,TODO,Research Data Management,TODO,TODO
+Depositing and Sharing Data on McMaster Dataverse,TODO,https://scds.github.io/intro-rdm/dataverse.html,TODO,Research Data Management,TODO,TODO
+Essentials of Open Data Sharing,TODO,https://scds.github.io/intro-rdm/sharing.html,TODO,Research Data Management,TODO,TODO
+Organize Your Research Projects with the Open Science Framework,TODO,https://scds.github.io/intro-rdm/osf.html,TODO,Research Data Management,TODO,TODO
+Qualitative Data: Practices for RDM Planning and Sharing,TODO,https://scds.github.io/intro-rdm/qualitative.html,TODO,Research Data Management,TODO,TODO
+Securely Managing and Publishing Sensitive Data,TODO,https://scds.github.io/intro-rdm/sensitive.html,TODO,Research Data Management,TODO,TODO
+"Set Yourself up for Research Success: Manage your Data like a Pro, and Get your own ORCiD Profile",TODO,https://scds.github.io/intro-rdm/researchsuccess,TODO,Research Data Management,TODO,TODO
+Strategies for Research Data Storage and Backup,TODO,https://scds.github.io/intro-rdm/storage.html,TODO,Research Data Management,TODO,TODO
+What are ORCiDs and DOIs - and Why Do I Need Them?,TODO,https://scds.github.io/intro-rdm/doi-orcid.html,TODO,Research Data Management,TODO,TODO
+What You Need to Know about the New Tri-Agency Research Data Management Policy,TODO,https://scds.github.io/intro-rdm/triagency.html,TODO,Research Data Management,TODO,TODO
+"Glitch: Disability, Feminism, Technology",TODO,https://scds.github.io/ds-bytes/Glitch.html,TODO,DS Bytes,TODO,TODO
+How to Lie with Data,TODO,https://scds.github.io/ds-bytes/Howtoliewithdata.html,TODO,DS Bytes,TODO,TODO
+The Value of Visuals in Science Communication,TODO,https://scds.github.io/ds-bytes/ScienceCommunication.html,TODO,DS Bytes,TODO,TODO
+Urban Heat Islands and Social Inequalities: A Data-Driven Story,TODO,https://scds.github.io/ds-bytes/UrbanHeatIslands.html,TODO,DS Bytes,TODO,TODO
+EQ vs IQ: Testing Gendered AI in Apple's Siri,TODO,https://scds.github.io/ds-bytes/EQIQ.html,TODO,DS Bytes,TODO,TODO
+Design Principles for Data Visualization,TODO,https://scds.github.io/data-visualization-principles/,TODO,Relevant Research,TODO,TODO
+Feminist Data Workshop,TODO,https://scds.github.io/building-feminist-data/,TODO,Relevant Research,TODO,TODO
+Research Beyond Academia,TODO,https://scds.github.io/research-beyond-academia/,TODO,Relevant Research,TODO,TODO
+Telling Data-Driven Stories: Lessons from data journalism,TODO,https://scds.github.io/data-driven-stories/,TODO,Relevant Research,TODO,TODO
+Transcending Mental Models,TODO,https://scds.github.io/transcending-mental-models/,TODO,Relevant Research,TODO,TODO
+Digital Networking and You,TODO,https://echo360.ca/media/2c508787-bddb-4678-9c63-505adc933a5a/public,TODO,Software Freedom Series,TODO,TODO
+Maintaining Your Digital Privacy,TODO,https://echo360.ca/media/9f2bc6af-a3ac-45e9-b50d-af2964108162/public,TODO,Software Freedom Series,TODO,TODO
+Getting Started with Text Preparation and Analysis,TODO,https://jasonbrodeur.github.io/dsi-text-prep/,TODO,ARL Digital Scholarship Institute,TODO,TODO
+A Guide to Data and Statistical Sources from Statistics Canada,TODO,https://libguides.mcmaster.ca/c.php?g=703562&p=5002203,TODO,LibGuides,TODO,TODO
+Business Data and Statistics,TODO,https://libguides.mcmaster.ca/c.php?g=704161,TODO,LibGuides,TODO,TODO
+Data Visualization,TODO,https://libguides.mcmaster.ca/dataviz,TODO,LibGuides,TODO,TODO
+GIS and GeoSpatial Data,TODO,https://libguides.mcmaster.ca/GIS,TODO,LibGuides,TODO,TODO
+Science Communication and Digital Scholarship: A SCDS Graduate Resident Panel,TODO,https://scds.github.io/2022-grevents/ScienceCommunication.html,TODO,Special Events,TODO,TODO
+Exploring Barriers to Misinformation Interventions in Public Libraries: A Special Guest Lecture by Abeer Siddiqui,TODO,https://scds.github.io/2022-grevents/siddiqui.html,TODO,Special Events,TODO,TODO
+"Content Creators, Digital Labour, and Online Identities: A SCDS Graduate Resident Panel",TODO,https://scds.github.io/2022-grevents/DigitalActivism.html,TODO,Special Events,TODO,TODO
+Looking Back to Go Forward: Histories of Oppositional Feminist Politics and the Internet: A Special Guest Lecture by Dr. Jessalynn Keller,TODO,https://scds.github.io/2022-grevents/DigitalActivism.html,TODO,Special Events,TODO,TODO
+Digital Tools in the Humanities and Social Sciences: A Research Roundtable,TODO,https://scds.github.io/dh-roundtable/,TODO,Special Events,TODO,TODO

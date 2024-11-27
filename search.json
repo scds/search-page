@@ -2,19 +2,17 @@
 layout: none
 ---
 [
-  {% assign workshops = site.data.workshop_list | sort: "Title"%}
+  {% assign workshops = site.data.workshop_list_scratch | sort: "Title"%}
   {% for workshop in workshops %}
     {% assign title = workshop.Title | strip_newlines | remove: '"' %}
-    {% assign year = workshop.Date | split: ", " | last %}
-    {% assign newDescription = workshop.Description | strip_newlines | remove: '"' | remove: '\' %}
     {% if workshop.URL != "NA" %}
       {
         "title"      : "{{ title }}",
-        "description": "{{ newDescription }}",
-        "year"       : "{{ year }}",
-        "software"   : "{{ workshop.Software }}",
+        "year"       : "{{ workshop.Year }}",
+        "series"     : "{{ workshop.Series }}",
+        "type"       : "{{ workshop.Type }}",
         "topic"      : "{{ workshop.Topic }}",
-        "series"     : "{{ workshop.Series }}"
+        "software"   : "{{ workshop.Software }}"
       }{% unless forloop.last %},{% endunless %}
     {% endif %}
   {% endfor %}

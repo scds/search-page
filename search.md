@@ -12,7 +12,7 @@ nav_order: 2
     <div style="display:flex; height: 100%">
       <div style="width: 70%; height: 100%; padding-right: 1em">
         <input style="width: 100%; height: 40px; border-radius: 10px; border: solid 1px gray; margin-bottom: 1em; padding-left: 1em; padding-right: 1em" type="text" id="search-inputt" placeholder="Search...">
-        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: max-content; overflow-y:scroll; height: 740px" id="results-container">
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: max-content max-content max-content max-content; overflow-y:scroll; height: 740px" id="results-container">
           <!-- This is where results are automatically filled -->
         </div>
       </div>
@@ -49,20 +49,24 @@ var json = "";
 var search = "";
 $.getJSON('data.json', function(obj) {
   json = obj;
-  $.getJSON('search.json', function(obj) {
-    search = obj;
+  $.getJSON('search.json', function(objj) {
+    search = objj;
 
     var sjs = SimpleJekyllSearch({
       searchInput: document.getElementById('search-inputt'),
       resultsContainer: document.getElementById('results-container'),
-      json: "search.json",
+      json: search,
       noResultsText: 'No result found!',
       limit: 30,
       fuzzy: true,
-      searchResultTemplate: '<!--{title}-->
+      searchResultTemplate: '<!--{title}, {url}-->
       <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px; height: auto;">
-        <img src="{image}">
-        <a target="_parent" href="{url}" style="margin-top: 5px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</a>
+        <a target="_parent" href="{url}" style="font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">
+        <object data="{image}" type="image/png" height="auto" width="100%">
+          <img src="assets/img/unknownImageLocation.png" height="100%">
+        </object>
+        <p style="margin-top: 5px; margin-bottom: 0px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</p>
+        </a>
         <p style="margin: 0px; font-family: Arial; font-size: 13px"> {series} - {year} </p>
       </div>
       ',
@@ -77,19 +81,19 @@ $.getJSON('data.json', function(obj) {
           function createTag(tag) { strr = strr.concat(" ", createHTMLTag(tag));  }
           value = value.split(", ");
           value.forEach(createTag);
-          const regex = /\*/i;
           return strr;
         }
 
-        if (prop === 'url' || prop === 'description' || prop === 'year' || prop === 'series') {
-          return getProperty(title, prop);
+        if (prop === 'year') {
+          var strr = "";
+          function createYear(year) { strr = strr.concat(year, ", ");  }
+          value = value.split(";");
+          value.forEach(createYear);
+          return strr.slice(0, -2);
         }
 
-        if (prop === 'image') {
-          $.get(getProperty(title, 'url'), function (html) {
-            console.log(html);
-          });
-          return "https://learn.scds.ca/dmds22-23/assets/img/3DPPoster.png";
+        if (prop === 'url' || prop === 'year' || prop === 'series' || prop === 'image') {
+          return getProperty(title, prop);
         }
       }
     })

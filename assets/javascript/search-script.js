@@ -30,8 +30,16 @@
   function inFilter(value) {
     for(const filterKey in filters) {
       if(filters[filterKey].length != 0) {
-        if(!filters[filterKey].includes(value[filterKey])) {
-          return false
+        let all_values = value[filterKey].split(";");
+        let in_filter = false;
+        for(let i = 0; i < all_values.length; i++) {
+          if(filters[filterKey].includes(all_values[i])) {
+            in_filter = true;
+            break;
+          }
+        }
+        if(!in_filter) {
+          return false;
         }
       }
     }
@@ -458,13 +466,19 @@
       let seriesContainer = document.getElementById('seriesFilters')
 
       for(let i = 0; i < json.length; i++) {
-        if(!years.includes(json[i].year)) {
-          years.push(json[i].year)
+        let splitYears = json[i].year.split(";");
+        for(let j = 0; j < splitYears.length; j++) {
+          if(!years.includes(splitYears[j])) {
+            years.push(splitYears[j]);
+          }
         }
 
-        if(!series.includes(json[i].series)) {
-          series.push(json[i].series)
-        }
+        let splitSeries = json[i].series.split(";");
+        for(let j = 0; j < splitSeries.length; j++) {
+          if(!series.includes(splitSeries[j])) {
+            series.push(splitSeries[j])
+          }
+        } 
       }
 
       years.sort()

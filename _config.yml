@@ -1,13 +1,6 @@
-title: Introduction to Python # *** Enter workshop title here 
-github_repo_url: "https://learn.scds.ca/search-page/" # *** Enter workshop URL (in github pages) here
-gh_edit_repository: "https://github.com/scds/search-page/" # *** Enter the github URL for your repo
+title: Workshop Search Page # *** Enter workshop title here 
 ga_tracking: "" # *** This needs to be set up in Google Analytics once you know the website URL (ask Jay to do this). Then the tracking code needs to be taken from Google Analytics and pasted here.  
 
-subtitle: ""
-nav_footer_logo_bottom: "https://raw.githubusercontent.com/scds/jtd-mcmaster/main/assets/images/scds-logo.png"
-nav_footer_logo_bottom_href: "https://scds.ca/"
-nav_footer_logo_top: ""
-nav_footer_logo_top_href: ""
 
 #  _____       _   _   _          _      _                            
 # | ____|   __| | (_) | |_       / \    | |__     ___   __   __   ___ 
@@ -15,11 +8,16 @@ nav_footer_logo_top_href: ""
 # | |___  | (_| | | | | |_     / ___ \  | |_) | | (_) |  \ V /  |  __/
 # |_____|  \__,_| |_|  \__|   /_/   \_\ |_.__/   \___/    \_/    \___|
 
-aux_links:
-  "SCDS Website":
-    - "https://scds.ca/"
+subtitle: ""
+nav_footer_logo_bottom: "https://raw.githubusercontent.com/scds/jtd-mcmaster/main/assets/images/scds-logo.png"
+nav_footer_logo_bottom_href: "https://scds.ca/"
+nav_footer_logo_top: ""
+nav_footer_logo_top_href: ""
 
-navigation: true
+github_repo_url: "" # *** Enter workshop URL (in github pages) here
+gh_edit_repository: "" # *** Enter the github URL for your repo
+
+navigation: false
 
 # Override Default SCDS Web Icon
 favicon_ico: ""
@@ -35,7 +33,7 @@ color_scheme: mcmaster
 heading_anchors: true
 
 # Back to top link
-back_to_top: true
+back_to_top: false
 back_to_top_text: "Back to top"
 
 # Removed by Richie - Requires manual updating. Automatic updating alternative is done in footer_custom.html.
@@ -44,7 +42,7 @@ back_to_top_text: "Back to top"
 # last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
 # Footer "Edit this page on GitHub" link text
-gh_edit_link: true # show or hide edit this page link
+gh_edit_link: false # show or hide edit this page link
 gh_edit_link_text: "View this content on GitHub"
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from

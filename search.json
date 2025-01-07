@@ -11,7 +11,7 @@ layout: none
         "year"       : "{{ workshop.Year }}",
         "series"     : "{{ workshop.Series }}",
         "type"       : "{{ workshop.Type }}",
-        "topic"      : "{{ workshop.Topic }}",
+        "topics"     : "{{ workshop.Topic }}",
         "software"   : "{{ workshop.Software }}"
       }{% unless forloop.last %},{% endunless %}
     {% endif %}

@@ -17,13 +17,19 @@ nav_order: 2
         </div>
       </div>
       <!-- Filters -->
-      <div style="width: 30%; font-size: small">
+      <div style="width: 30%; font-size: small; overflow-y:scroll;" >
         <fieldset>
         <div id="yearsFilters">
           <b>Year</b><br>
         </div>
         <div id="seriesFilters">
           <b>Series</b><br>
+        </div>
+        <div id="topicsFilters">
+          <b>Topics</b><br>
+        </div>
+        <div id="softwareFilters">
+          <b>Software</b><br>
         </div>
         </fieldset>
       </div>

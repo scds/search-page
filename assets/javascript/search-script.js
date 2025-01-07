@@ -14,13 +14,19 @@
 
   var filters = {
     "year": [],
-    "series": []
+    "series": [],
+    "topics": [],
+    "software": [],
   }
 
   function hasFilter() {
     if(filters["year"].length != 0) {
       return true
     } else if(filters["series"].length != 0) {
+      return true
+    } else if(filters["topics"].length != 0) {
+      return true
+    } else if(filters["software"].length != 0) {
       return true
     }
 
@@ -461,9 +467,13 @@
 
       const years = [];
       const series = [];
+      const topics = [];
+      const software = [];
 
       let yearsContainer = document.getElementById('yearsFilters')
       let seriesContainer = document.getElementById('seriesFilters')
+      let topicsContainer = document.getElementById('topicsFilters');
+      let softwareContainer = document.getElementById('softwareFilters');
 
       for(let i = 0; i < json.length; i++) {
         let splitYears = json[i].year.split(";");
@@ -479,13 +489,31 @@
             series.push(splitSeries[j])
           }
         } 
+
+        let splitTopics = json[i].topics.split(";");
+        for(let j = 0; j < splitTopics.length; j++) {
+          if(!topics.includes(splitTopics[j])) {
+            topics.push(splitTopics[j])
+          }
+        } 
+
+        let splitSoftware = json[i].software.split(";");
+        for(let j = 0; j < splitSoftware.length; j++) {
+          if(!software.includes(splitSoftware[j])) {
+            software.push(splitSoftware[j])
+          }
+        } 
       }
 
       years.sort()
       series.sort()
+      topics.sort()
+      software.sort()
 
       addFilter("year", years, yearsContainer)
       addFilter("series", series, seriesContainer)
+      addFilter("topics", topics, topicsContainer)
+      addFilter("software", software, softwareContainer)
     }
   
     function initWithURL (url) {

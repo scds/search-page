@@ -477,6 +477,7 @@
 
       for(let i = 0; i < json.length; i++) {
         let splitYears = json[i].year.split(";");
+        splitYears = splitYears.map((x) => x.trim());
         for(let j = 0; j < splitYears.length; j++) {
           if(!years.includes(splitYears[j])) {
             years.push(splitYears[j]);
@@ -484,6 +485,7 @@
         }
 
         let splitSeries = json[i].series.split(";");
+        splitSeries = splitSeries.map((x) => x.trim());
         for(let j = 0; j < splitSeries.length; j++) {
           if(!series.includes(splitSeries[j])) {
             series.push(splitSeries[j])
@@ -491,6 +493,7 @@
         } 
 
         let splitTopics = json[i].topics.split(";");
+        splitTopics = splitTopics.map((x) => x.trim());
         for(let j = 0; j < splitTopics.length; j++) {
           if(!topics.includes(splitTopics[j])) {
             topics.push(splitTopics[j])
@@ -498,6 +501,7 @@
         } 
 
         let splitSoftware = json[i].software.split(";");
+        splitSoftware = splitSoftware.map((x) => x.trim());
         for(let j = 0; j < splitSoftware.length; j++) {
           if(!software.includes(splitSoftware[j])) {
             software.push(splitSoftware[j])

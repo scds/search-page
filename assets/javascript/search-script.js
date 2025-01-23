@@ -37,6 +37,7 @@
     for(const filterKey in filters) {
       if(filters[filterKey].length != 0) {
         let all_values = value[filterKey].split(";");
+        all_values = all_values.map((x) => x.trim());
         let in_filter = false;
         for(let i = 0; i < all_values.length; i++) {
           if(filters[filterKey].includes(all_values[i])) {
@@ -475,44 +476,50 @@
       let topicsContainer = document.getElementById('topicsFilters');
       let softwareContainer = document.getElementById('softwareFilters');
 
+      let splitYears = [];
+      let splitSeries = [];
+      let splitTopics = [];
+      let splitSoftware = [];
+
       for(let i = 0; i < json.length; i++) {
-        let splitYears = json[i].year.split(";");
+        splitYears = json[i].year.split(";");
         splitYears = splitYears.map((x) => x.trim());
         for(let j = 0; j < splitYears.length; j++) {
-          if(!years.includes(splitYears[j])) {
+          if(splitYears[j] !== "N/A" && !years.includes(splitYears[j])) {
             years.push(splitYears[j]);
           }
         }
 
-        let splitSeries = json[i].series.split(";");
+        splitSeries = json[i].series.split(";");
         splitSeries = splitSeries.map((x) => x.trim());
+        splitSeries.sort();
         for(let j = 0; j < splitSeries.length; j++) {
-          if(!series.includes(splitSeries[j])) {
+          if(splitSeries[j] !== "N/A" && !series.includes(splitSeries[j])) {
             series.push(splitSeries[j])
           }
         } 
 
-        let splitTopics = json[i].topics.split(";");
+        splitTopics = json[i].topics.split(";");
         splitTopics = splitTopics.map((x) => x.trim());
         for(let j = 0; j < splitTopics.length; j++) {
-          if(!topics.includes(splitTopics[j])) {
-            topics.push(splitTopics[j])
+          if(splitTopics[j] !== "N/A" && !topics.includes(splitTopics[j])) {
+            topics.push(splitTopics[j]);
           }
         } 
 
-        let splitSoftware = json[i].software.split(";");
+        splitSoftware = json[i].software.split(";");
         splitSoftware = splitSoftware.map((x) => x.trim());
         for(let j = 0; j < splitSoftware.length; j++) {
-          if(!software.includes(splitSoftware[j])) {
+          if(splitSoftware[j] !== "N/A" && !software.includes(splitSoftware[j])) {
             software.push(splitSoftware[j])
           }
         } 
       }
 
-      years.sort()
-      series.sort()
-      topics.sort()
-      software.sort()
+      years.sort();
+      series.sort();
+      topics.sort();
+      software.sort();
 
       addFilter("year", years, yearsContainer)
       addFilter("series", series, seriesContainer)

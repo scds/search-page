@@ -66,8 +66,8 @@ $.getJSON('data.json', function(obj) {
       limit: 12,
       fuzzy: true,
       searchResultTemplate: '<!--{title}, {url}-->
-      <div style="background-color: #ABBAEA; padding: 10px; border-radius: 10px; margin: 5px; height: auto;">
-        <a target="_parent" href="{url}" style="font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">
+      <div style="background-color: #AAD5E1; padding: 10px; border-radius: 10px; margin: 5px; height: auto;">
+        <a target="_parent" href="{url}" style="font-family: Arial; font-size: 18px !important; line-height: 1.25; font-weight: bold; display:block">
         <object data="{image}" type="image/png" height="auto" width="100%" style="background-color: white;">
           <object data="assets/img/{series_image}_image.png" type="image/png" height="auto" width="100%" style="background-color: white;">
             <img src="assets/img/unknownImageLocation.png" height="100%" style="background-color: white;">

@@ -4,35 +4,35 @@ title: Search
 nav_order: 2
 ---
 
+<link rel="stylesheet" href="./assets/css/search-tool.css">
+
 <!-- https://jekyllrb.com/tutorials/csv-to-table/ -->
 <!-- https://github.com/christian-fei/Simple-Jekyll-Search -->
 
-<div style="height:800px; overflow-y: clip">
-  <div id="search-container" style="height:100%">
-    <div style="display:flex; height: 100%">
-      <div style="width: 70%; height: 100%; padding-right: 1em">
-        <input style="width: 100%; height: 40px; border-radius: 10px; border: solid 1px gray; margin-bottom: 1em; padding-left: 1em; padding-right: 1em" type="text" id="search-inputt" placeholder="Search...">
-        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: max-content max-content max-content max-content; overflow-y:scroll; height: 740px" id="results-container">
-          <!-- This is where results are automatically filled -->
-        </div>
+<div class="search-filter-container">
+  <div class="search-container" id="search-container">
+    <div class="search-container-left">
+      <input class="tool-search-input" type="text" id="search-inputt" placeholder="Search...">
+      <div class="results-container" id="results-container">
+        <!-- This is where results are automatically filled -->
       </div>
-      <!-- Filters -->
-      <div style="width: 30%; font-size: small; overflow-y:scroll;" >
-        <fieldset>
-        <div id="yearsFilters">
-          <b>Year</b><br>
-        </div>
-        <div id="seriesFilters">
-          <b>Series</b><br>
-        </div>
-        <div id="topicsFilters">
-          <b>Topics</b><br>
-        </div>
-        <div id="softwareFilters">
-          <b>Software</b><br>
-        </div>
-        </fieldset>
+    </div>
+    <!-- Filters -->
+    <div class="filters-container">
+      <fieldset>
+      <div id="yearsFilters">
+        <b>Year</b><br>
       </div>
+      <div id="seriesFilters">
+        <b>Series</b><br>
+      </div>
+      <div id="topicsFilters">
+        <b>Topics</b><br>
+      </div>
+      <div id="softwareFilters">
+        <b>Software</b><br>
+      </div>
+      </fieldset>
     </div>
   </div>
 </div>

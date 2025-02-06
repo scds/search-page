@@ -1,3 +1,11 @@
+footer {
+    display: none;
+}
+
+hr {
+    display: none;
+}
+
 .search-filter-container {
     height: 800px; 
     overflow-y: clip;
@@ -39,6 +47,14 @@
 }
 
 @media only screen and (max-width: 750px) {
+    .search-container {
+        display: block;
+    }
+
+    .search-container-left {
+        width: 100%;
+    }
+
     .results-container {
         display: grid; 
         grid-template-columns: 1fr; 

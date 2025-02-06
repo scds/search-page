@@ -20,18 +20,18 @@ nav_order: 2
     <!-- Filters -->
     <div class="filters-container">
       <fieldset>
-      <div id="yearsFilters">
-        <b>Year</b><br>
-      </div>
-      <div id="seriesFilters">
-        <b>Series</b><br>
-      </div>
-      <div id="topicsFilters">
-        <b>Topics</b><br>
-      </div>
-      <div id="softwareFilters">
-        <b>Software</b><br>
-      </div>
+        <details open id="yearsFilters" style="all: unset;">
+          <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
+        </details>
+        <details open id="seriesFilters" style="all: unset;">
+          <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
+        </details>
+        <details open id="topicsFilters" style="all: unset;">
+          <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
+        </details>
+        <details open id="softwareFilters" style="all: unset;">
+          <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
+        </details>
       </fieldset>
     </div>
   </div>

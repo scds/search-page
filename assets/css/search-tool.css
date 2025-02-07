@@ -46,6 +46,10 @@ hr {
     overflow-y: scroll;
 }
 
+.filter-button {
+    display: none;
+}
+
 @media only screen and (max-width: 750px) {
     .search-container {
         display: block;
@@ -53,6 +57,7 @@ hr {
 
     .search-container-left {
         width: 100%;
+        height: 70%;
     }
 
     .results-container {
@@ -60,6 +65,19 @@ hr {
         grid-template-columns: 1fr; 
         grid-template-rows: max-content; 
         overflow-y: scroll; 
-        height: 740px;
+        height: 87.5%;
     }
-  }
+
+    .filter-button {
+        display:block;
+        position: relative;
+        top: -3.35em;
+        left: 0.5em;
+        width: 2.25em;
+        height: 2.25em;
+    }
+
+    .tool-search-input {
+        padding-left: 4em;
+    }
+}

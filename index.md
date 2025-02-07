@@ -13,6 +13,7 @@ nav_order: 2
   <div class="search-container" id="search-container">
     <div class="search-container-left">
       <input class="tool-search-input" type="text" id="search-inputt" placeholder="Search...">
+      <button class="filter-button" type="button">C!</button>
       <div class="results-container" id="results-container">
         <!-- This is where results are automatically filled -->
       </div>

@@ -471,10 +471,10 @@
       const topics = [];
       const software = [];
 
-      let yearsContainer = document.getElementById('yearsFilters')
-      let seriesContainer = document.getElementById('seriesFilters')
-      let topicsContainer = document.getElementById('topicsFilters');
-      let softwareContainer = document.getElementById('softwareFilters');
+      let yearsContainer = document.getElementsByClassName('yearsFilters')
+      let seriesContainer = document.getElementsByClassName('seriesFilters')
+      let topicsContainer = document.getElementsByClassName('topicsFilters');
+      let softwareContainer = document.getElementsByClassName('softwareFilters');
 
       let splitYears = [];
       let splitSeries = [];
@@ -521,10 +521,14 @@
       topics.sort();
       software.sort();
 
-      addFilter("year", years, yearsContainer)
-      addFilter("series", series, seriesContainer)
-      addFilter("topics", topics, topicsContainer)
-      addFilter("software", software, softwareContainer)
+      addFilter("year", years, yearsContainer[0])
+      addFilter("year", years, yearsContainer[1])
+      addFilter("series", series, seriesContainer[0])
+      addFilter("series", series, seriesContainer[1])
+      addFilter("topics", topics, topicsContainer[0])
+      addFilter("topics", topics, topicsContainer[1])
+      addFilter("software", software, softwareContainer[0])
+      addFilter("software", software, softwareContainer[1])
     }
   
     function initWithURL (url) {

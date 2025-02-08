@@ -13,7 +13,23 @@ nav_order: 2
   <div class="search-container" id="search-container">
     <div class="search-container-left">
       <input class="tool-search-input" type="text" id="search-inputt" placeholder="Search...">
-      <button class="filter-button" type="button">C!</button>
+      <button class="filter-button" type="button">🝖</button>
+      <div class="filters-container-mobile">
+        <fieldset>
+          <details class="yearsFilters" style="all: unset;">
+            <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
+          </details>
+          <details class="seriesFilters" style="all: unset;">
+            <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
+          </details>
+          <details class="topicsFilters" style="all: unset;">
+            <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
+          </details>
+          <details class="softwareFilters" style="all: unset;">
+            <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
+          </details>
+        </fieldset>
+      </div>
       <div class="results-container" id="results-container">
         <!-- This is where results are automatically filled -->
       </div>
@@ -21,16 +37,16 @@ nav_order: 2
     <!-- Filters -->
     <div class="filters-container">
       <fieldset>
-        <details open id="yearsFilters" style="all: unset;">
+        <details open class="yearsFilters" style="all: unset;">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
         </details>
-        <details open id="seriesFilters" style="all: unset;">
+        <details open class="seriesFilters" style="all: unset;">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
         </details>
-        <details open id="topicsFilters" style="all: unset;">
+        <details open class="topicsFilters" style="all: unset;">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
         </details>
-        <details open id="softwareFilters" style="all: unset;">
+        <details open class="softwareFilters" style="all: unset;">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
         </details>
       </fieldset>

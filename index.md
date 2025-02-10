@@ -13,7 +13,7 @@ nav_order: 2
   <div class="search-container" id="search-container">
     <div class="search-container-left">
       <input class="tool-search-input" type="text" id="search-inputt" placeholder="Search...">
-      <button class="filter-button" type="button">🝖</button>
+      <button onclick="toggleMobileFilter();" class="filter-button" type="button">🝖</button>
       <div class="filters-container-mobile">
         <fieldset>
           <details class="yearsFilters" style="all: unset;">

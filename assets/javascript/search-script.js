@@ -609,3 +609,13 @@
   })(window)
   
   }());
+
+function toggleMobileFilter() {
+    let filtersMenu = document.getElementsByClassName("filters-container-mobile")[0];
+    let option = getComputedStyle(filtersMenu).getPropertyValue("display");
+    if (option == "none") {
+      filtersMenu.style.display = "block";
+    } else {
+      filtersMenu.style.display = "none";
+    }
+}

@@ -12,23 +12,25 @@ nav_order: 2
 <div class="search-filter-container">
   <div class="search-container" id="search-container">
     <div class="search-container-left">
-      <input class="tool-search-input" type="text" id="search-inputt" placeholder="Search...">
-      <button onclick="toggleMobileFilter();" class="filter-button" type="button">🝖</button>
-      <div class="filters-container-mobile">
-        <fieldset>
-          <details class="yearsFilters" style="all: unset;">
-            <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
-          </details>
-          <details class="seriesFilters" style="all: unset;">
-            <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
-          </details>
-          <details class="topicsFilters" style="all: unset;">
-            <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
-          </details>
-          <details class="softwareFilters" style="all: unset;">
-            <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
-          </details>
-        </fieldset>
+      <div class="mobile-search-container">
+        <input class="tool-search-input" type="text" id="search-inputt" placeholder="Search...">
+        <button onclick="toggleMobileFilter();" class="filter-button" type="button">🝖</button>
+        <div class="filters-container-mobile">
+          <fieldset>
+            <details class="yearsFilters" style="all: unset;">
+              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
+            </details>
+            <details class="seriesFilters" style="all: unset;">
+              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
+            </details>
+            <details class="topicsFilters" style="all: unset;">
+              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
+            </details>
+            <details class="softwareFilters" style="all: unset;">
+              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
+            </details>
+          </fieldset>
+        </div>
       </div>
       <div class="results-container" id="results-container">
         <!-- This is where results are automatically filled -->

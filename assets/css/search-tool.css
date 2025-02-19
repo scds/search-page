@@ -73,10 +73,10 @@ hr {
     height: 2.25em;
 }
 
-.filter-dropdown {
+details.filter-dropdown {
     padding: 0em !important;
-    border: none !important;
-    margin-bottom: 0em !important;
+    border: none;
+    margin-bottom: 0em;
 }
 
 @media only screen and (max-width: 750px) {

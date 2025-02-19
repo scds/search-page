@@ -1,7 +1,9 @@
 body {
+    background-color: white;
     padding-bottom: 0;
     overflow-y: hidden;
 }
+
 footer {
     display: none;
 }

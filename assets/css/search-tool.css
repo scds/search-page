@@ -72,10 +72,6 @@ hr {
 }
 
 @media only screen and (max-width: 750px) {
-    body {
-        overflow-y: scroll;
-    }
-    
     .main-content-wrap {
         padding-top: 0; 
     }
@@ -98,7 +94,7 @@ hr {
         display: grid; 
         grid-template-columns: 1fr; 
         grid-template-rows: max-content;
-        overflow-y: hidden;
+        overflow-y: scroll;
         height: 100%;
     }
 

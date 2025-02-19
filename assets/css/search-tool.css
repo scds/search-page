@@ -73,6 +73,12 @@ hr {
     height: 2.25em;
 }
 
+.filter-dropdown {
+    padding: 0em !important;
+    border: none !important;
+    margin-bottom: 0em !important;
+}
+
 @media only screen and (max-width: 750px) {
     body {
         overflow-y: scroll;

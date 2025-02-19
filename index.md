@@ -17,16 +17,16 @@ nav_order: 2
         <button onclick="toggleMobileFilter();" class="filter-button" type="button">🝖</button>
         <div class="filters-container-mobile">
           <fieldset>
-            <details class="yearsFilters" style="all: unset;">
+            <details class="filter-dropdown" id="yearsFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
             </details>
-            <details class="seriesFilters" style="all: unset;">
+            <details class="filter-dropdown" id="seriesFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
             </details>
-            <details class="topicsFilters" style="all: unset;">
+            <details class="filter-dropdown" id="topicsFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
             </details>
-            <details class="softwareFilters" style="all: unset;">
+            <details class="filter-dropdown" id="softwareFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
             </details>
           </fieldset>
@@ -39,16 +39,16 @@ nav_order: 2
     <!-- Filters -->
     <div class="filters-container">
       <fieldset>
-        <details open class="yearsFilters" style="all: unset;">
+        <details open class="filter-dropdown" id="yearsFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
         </details>
-        <details open class="seriesFilters" style="all: unset;">
+        <details open class="filter-dropdown" id="seriesFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
         </details>
-        <details open class="topicsFilters" style="all: unset;">
+        <details open class="filter-dropdown" id="topicsFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
         </details>
-        <details open class="softwareFilters" style="all: unset;">
+        <details open class="filter-dropdown" id="softwareFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
         </details>
       </fieldset>

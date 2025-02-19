@@ -471,10 +471,15 @@
       const topics = [];
       const software = [];
 
-      let yearsContainer = document.getElementsByClassName('yearsFilters')
-      let seriesContainer = document.getElementsByClassName('seriesFilters')
-      let topicsContainer = document.getElementsByClassName('topicsFilters');
-      let softwareContainer = document.getElementsByClassName('softwareFilters');
+      let yearsContainer = document.getElementById('yearsFilters')
+      let seriesContainer = document.getElementById('seriesFilters')
+      let topicsContainer = document.getElementById('topicsFilters');
+      let softwareContainer = document.getElementById('softwareFilters');
+
+      let yearsContainerMobile = document.getElementById('yearsFiltersMobile')
+      let seriesContainerMobile = document.getElementById('seriesFiltersMobile')
+      let topicsContainerMobile = document.getElementById('topicsFiltersMobile');
+      let softwareContainerMobile = document.getElementById('softwareFiltersMobile');
 
       let splitYears = [];
       let splitSeries = [];
@@ -521,14 +526,14 @@
       topics.sort();
       software.sort();
 
-      addFilter("year", years, yearsContainer[0])
-      addFilter("year", years, yearsContainer[1])
-      addFilter("series", series, seriesContainer[0])
-      addFilter("series", series, seriesContainer[1])
-      addFilter("topics", topics, topicsContainer[0])
-      addFilter("topics", topics, topicsContainer[1])
-      addFilter("software", software, softwareContainer[0])
-      addFilter("software", software, softwareContainer[1])
+      addFilter("year", years, yearsContainer)
+      addFilter("year", years, yearsContainerMobile)
+      addFilter("series", series, seriesContainer)
+      addFilter("series", series, seriesContainerMobile)
+      addFilter("topics", topics, topicsContainer)
+      addFilter("topics", topics, topicsContainerMobile)
+      addFilter("software", software, softwareContainer)
+      addFilter("software", software, softwareContainerMobile)
     }
   
     function initWithURL (url) {

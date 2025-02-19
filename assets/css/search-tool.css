@@ -100,7 +100,7 @@ hr {
         display: grid; 
         grid-template-columns: 1fr; 
         grid-template-rows: max-content;
-        overflow-y: scroll;
+        overflow-y: hidden;
         height: 100%;
     }
 

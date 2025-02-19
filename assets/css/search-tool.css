@@ -1,3 +1,7 @@
+body {
+    padding-bottom: 0;
+    overflow-y: hidden;
+}
 footer {
     display: none;
 }
@@ -69,9 +73,9 @@ hr {
 
 @media only screen and (max-width: 750px) {
     body {
-        padding-bottom: 0;
+        overflow-y: scroll;
     }
-
+    
     .main-content-wrap {
         padding-top: 0; 
     }
@@ -93,8 +97,8 @@ hr {
     .results-container {
         display: grid; 
         grid-template-columns: 1fr; 
-        grid-template-rows: max-content; 
-        overflow-y: scroll; 
+        grid-template-rows: max-content;
+        overflow-y: hidden;
         height: 100%;
     }
 

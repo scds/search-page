@@ -85,16 +85,16 @@ $.getJSON('data.json', function(obj) {
       limit: 12,
       fuzzy: true,
       searchResultTemplate: '<!--{title}, {url}-->
-      <div style="background-color: #AAD5E1; padding: 10px; border-radius: 10px; margin: 5px; height: auto;">
-        <a target="_parent" href="{url}" style="font-family: Arial; font-size: 18px !important; line-height: 1.25; font-weight: bold; display:block">
-        <object data="{image}" type="image/png" height="auto" width="100%" style="background-color: white;">
-          <object data="assets/img/{series_image}_image.png" type="image/png" height="auto" width="100%" style="background-color: white;">
-            <img src="assets/img/unknownImageLocation.png" height="100%" style="background-color: white;">
+      <div class="result-tile">
+        <a target="_parent" href="{url}" class="result-link">
+        <object data="{image}" type="image/png" height="auto" width="100%" class="result-image">
+          <object data="assets/img/{series_image}_image.png" type="image/png" height="auto" width="100%" class="result-image">
+            <img src="assets/img/unknownImageLocation.png" height="100%" class="result-image">
           </object>
         </object>
-        <p style="margin-top: 5px; margin-bottom: 0px; font-family: Arial; font-size: 18px !important; line-height: 1.25; display:block">{title}</p>
+        <p class="result-title">{title}</p>
         </a>
-        <p style="margin: 0px; font-family: Arial; font-size: 13px"> {series} - {year} </p>
+        <p class="result-details"> {series} - {year} - {topics} {software} </p>
       </div>
       ',
       templateMiddleware: function(prop, value, template) {
@@ -102,13 +102,25 @@ $.getJSON('data.json', function(obj) {
           title = value;
         }
 
-        if (prop === 'tags') {
+        if (prop === 'topics') {
           var strr = "";
-          function createHTMLTag(tag) { return `<p class="label">${tag}</p>`;}
-          function createTag(tag) { strr = strr.concat(" ", createHTMLTag(tag));  }
-          value = value.split(", ");
-          value.forEach(createTag);
-          return strr;
+          function createTopics(topic) { strr = strr.concat(topic, ", ");  }
+          value = value.split("; ");
+          value.forEach(createTopics);
+          return strr.slice(0, -2);
+        }
+
+        if (prop === 'software') {
+          var strr = "";
+          function createSoftware(software) { strr = strr.concat(software, ", ");  }
+          if(value == "N/A") {
+            return strr;
+          } else {
+            strr = " - ";
+          }
+          value = value.split("; ");
+          value.forEach(createSoftware);
+          return strr.slice(0, -2);
         }
 
         if (prop === 'year') {

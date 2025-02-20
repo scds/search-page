@@ -79,6 +79,42 @@ details.filter-dropdown {
     margin-bottom: 0em;
 }
 
+.result-tile {
+    background-color: #AAD5E1; 
+    padding: 10px; 
+    border-radius: 10px; 
+    margin: 5px; 
+    height: auto;
+}
+
+.result-link {
+    font-family: Arial; 
+    font-size: 18px; 
+    line-height: 1.25; 
+    font-weight: bold; 
+    display: block;
+}
+
+.result-image {
+    background-color: white;
+}
+
+.result-title {
+    margin-top: 5px; 
+    margin-bottom: 0px; 
+    font-family: Arial; 
+    font-size: 18px; 
+    line-height: 1.25; 
+    display:block;
+}
+
+.result-details {
+    margin: 0px; 
+    font-family: Arial; 
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
 @media only screen and (max-width: 750px) {
     body {
         overflow-y: scroll;

@@ -448,11 +448,13 @@
       search(options.searchInput.value)
     }
   
-    function addFilter(name, filter, container) {
+    function addFilter(name, filter, container, counts) {
       for(let i = 0; i < filter.length; i++) {
         let html = `
-          <input type="checkbox" id="${name};${filter[i]}">
-          <label for="${name};${filter[i]}">${filter[i]}</label><br>
+          <label>
+            <input type="checkbox" id="${name};${filter[i]}">
+            ${filter[i]} (${counts[filter[i]]})
+          </label><br>
         `
         appendToContainer(html, container)
       }
@@ -486,10 +488,17 @@
       let splitTopics = [];
       let splitSoftware = [];
 
+      let counts = {};
+
       for(let i = 0; i < json.length; i++) {
         splitYears = json[i].year.split(";");
         splitYears = splitYears.map((x) => x.trim());
         for(let j = 0; j < splitYears.length; j++) {
+          if(!counts[splitYears[j]]) {
+            counts[splitYears[j]] = 1;
+          } else {
+            counts[splitYears[j]] += 1;
+          }
           if(splitYears[j] !== "N/A" && !years.includes(splitYears[j])) {
             years.push(splitYears[j]);
           }
@@ -499,6 +508,11 @@
         splitSeries = splitSeries.map((x) => x.trim());
         splitSeries.sort();
         for(let j = 0; j < splitSeries.length; j++) {
+          if(!counts[splitSeries[j]]) {
+            counts[splitSeries[j]] = 1;
+          } else {
+            counts[splitSeries[j]] += 1;
+          }
           if(splitSeries[j] !== "N/A" && !series.includes(splitSeries[j])) {
             series.push(splitSeries[j])
           }
@@ -507,6 +521,11 @@
         splitTopics = json[i].topics.split(";");
         splitTopics = splitTopics.map((x) => x.trim());
         for(let j = 0; j < splitTopics.length; j++) {
+          if(!counts[splitTopics[j]]) {
+            counts[splitTopics[j]] = 1;
+          } else {
+            counts[splitTopics[j]] += 1;
+          }
           if(splitTopics[j] !== "N/A" && !topics.includes(splitTopics[j])) {
             topics.push(splitTopics[j]);
           }
@@ -515,6 +534,11 @@
         splitSoftware = json[i].software.split(";");
         splitSoftware = splitSoftware.map((x) => x.trim());
         for(let j = 0; j < splitSoftware.length; j++) {
+          if(!counts[splitSoftware[j]]) {
+            counts[splitSoftware[j]] = 1;
+          } else {
+            counts[splitSoftware[j]] += 1;
+          }
           if(splitSoftware[j] !== "N/A" && !software.includes(splitSoftware[j])) {
             software.push(splitSoftware[j])
           }
@@ -522,18 +546,18 @@
       }
 
       years.sort();
-      series.sort();
-      topics.sort();
-      software.sort();
+      series.sort((a, b) => counts[b] - counts[a]);
+      topics.sort((a, b) => counts[b] - counts[a]);
+      software.sort((a, b) => counts[b] - counts[a]);
 
-      addFilter("year", years, yearsContainer)
-      addFilter("year", years, yearsContainerMobile)
-      addFilter("series", series, seriesContainer)
-      addFilter("series", series, seriesContainerMobile)
-      addFilter("topics", topics, topicsContainer)
-      addFilter("topics", topics, topicsContainerMobile)
-      addFilter("software", software, softwareContainer)
-      addFilter("software", software, softwareContainerMobile)
+      addFilter("year", years, yearsContainer, counts)
+      addFilter("year", years, yearsContainerMobile, counts)
+      addFilter("series", series, seriesContainer, counts)
+      addFilter("series", series, seriesContainerMobile, counts)
+      addFilter("topics", topics, topicsContainer, counts)
+      addFilter("topics", topics, topicsContainerMobile, counts)
+      addFilter("software", software, softwareContainer, counts)
+      addFilter("software", software, softwareContainerMobile, counts)
     }
   
     function initWithURL (url) {

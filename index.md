@@ -83,7 +83,7 @@ $.getJSON('data.json', function(obj) {
       json: search,
       noResultsText: 'No result found!',
       limit: 12,
-      fuzzy: true,
+      fuzzy: false,
       searchResultTemplate: '<!--{title}, {url}-->
       <div class="result-tile">
         <a target="_parent" href="{url}" class="result-link">

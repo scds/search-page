@@ -46,6 +46,12 @@ hr {
     height: 740px;
 }
 
+#text-results-container {
+    overflow-y: scroll; 
+    height: 740px;
+    width: 100%;
+}
+
 .filters-container {
     width: 30%; 
     font-size: small; 

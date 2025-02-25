@@ -121,6 +121,15 @@ details.filter-dropdown {
     line-height: 1.5em;
 }
 
+.text-list-result {
+    color:#0d5d78;
+    font-weight: 500;
+}
+
+#text-result-container > ul > li {
+    position: fixed;
+}
+
 @media only screen and (max-width: 750px) {
     body {
         overflow-y: scroll;

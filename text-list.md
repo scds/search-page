@@ -18,7 +18,6 @@ var json = "";
 var search = "";
 $.getJSON('data.json', function(obj) {
   json = obj;
-  console.log(json);
   let results = document.getElementById('text-results-container');
   let categories = {};
 
@@ -30,15 +29,15 @@ $.getJSON('data.json', function(obj) {
     }
   }
 
-  console.log(categories);
-
   for (const [key, value] of Object.entries(categories).sort()) {
     results.innerHTML += `<h1>${key}</h1>`;
     value.sort((a, b) => a.title.localeCompare(b.title));
-
+    
+    let listToAdd = "<ul>\n";
     for (const workshop of value) {
-      results.innerHTML += `<p>${workshop.title}</p>`;
+      listToAdd += `<li><a href="${workshop.url}" class="text-list-result">${workshop.title}</a></li>\n`;
     }
+    results.innerHTML += listToAdd + "</ul>\n";
   }
 })
 </script>

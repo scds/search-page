@@ -5,13 +5,13 @@ title: Search
 
 <link rel="stylesheet" href="./assets/css/search-tool.css">
 
-
 <div id="text-results-container">
   <!-- This is where results are automatically filled -->
+  {{ site.data.workshop_list_scratch }}
 </div>
 
 
-<script src="assets/javascript/jquery.js"></script>
+<!-- <script src="assets/javascript/jquery.js"></script>
 <script>
 var title = "";
 var json = "";
@@ -40,4 +40,4 @@ $.getJSON('data.json', function(obj) {
     results.innerHTML += listToAdd + "</ul>\n";
   }
 })
-</script>
+</script> -->

@@ -126,8 +126,8 @@ details.filter-dropdown {
     font-weight: 500;
 }
 
-#text-result-container > ul > li {
-    position: fixed;
+ul > li::before {
+    position: relative !important;
 }
 
 @media only screen and (max-width: 750px) {

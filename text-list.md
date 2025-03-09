@@ -3,6 +3,7 @@ layout: minimal
 title: Search
 ---
 
+<link rel="stylesheet" href="./assets/css/search-tool.css">
 
 {% assign workshops = site.data.workshop_list_scratch | sort_natural: "Title" %}
 {% assign seriesList = site.data.workshop_list_scratch | map: "Series" | uniq | sort_natural %}

@@ -10,7 +10,7 @@ Machine Learning with R: Linear Regression,2022-2023;2023-2024,https://learn.scd
 Machine Learning with R: Logistic Regression,2022-2023;2023-2024,https://learn.scds.ca/machine-learning-with-r/logistic-regression.html,https://learn.scds.ca/machine-learning-with-r/assets/img/logisticregression.png,DASH,Recording,Data Analysis; Machine Learning; Visualization; Programming,R
 Machine Learning with R: Random Forest Classification Approach,2022-2023;2023-2024,https://learn.scds.ca/machine-learning-with-r/random-forest.html,https://learn.scds.ca/machine-learning-with-r/assets/img/randomforest.png,DASH,Recording,Data Analysis; Machine Learning; Visualization; Programming,R
 Machine Learning with R: Support Vector Machine Classification,2022-2023,https://learn.scds.ca/machine-learning-with-r/svm.html,https://learn.scds.ca/machine-learning-with-r/assets/img/MLR-SVM.png,DASH,Recording,Data Analysis; Machine Learning; Visualization; Programming,R
-Introduction to Python,2020-2021;2022-2023;2023-2024,https://learn.scds.ca/intro-python/,https://learn.scds.ca/intro-python/assets/img/titleSlide.png,DASH,Recording;Asynchronous Workshop,Programming,Python
+Introduction to Python,2020-2021;2022-2023;2023-2024;2024-2025,https://learn.scds.ca/intro-python/,https://learn.scds.ca/intro-python/assets/img/titleSlide.png,DASH,Recording;Asynchronous Workshop,Programming,Python
 Intermediate Python Programming (2022-2023),2022-2023,https://learn.scds.ca/dash22-23/IntermediatePython.html,https://learn.scds.ca/dash22-23/assets/img/IntPyth.png,DASH,Recording,Programming,Python
 Making the Move from ArcMap to ArcGIS Pro,2022-2023,https://learn.scds.ca/dash22-23/ArcGISPro.html,https://learn.scds.ca/dash22-23/assets/img/ArcMapArcPro.png,DASH,Asynchronous Workshop,GIS,ArcGIS
 Machine Learning with Python,2022-2023,https://learn.scds.ca/dash22-23/Machine-learning-python.html,https://learn.scds.ca/dash22-23/assets/img/Python-Rescheduled.png,DASH,Recording,Data Analysis; Machine Learning; Visualization; Programming,Python
@@ -98,3 +98,21 @@ Identifying Proper Nouns with Named Entity Recognition,2022-2023,https://learn.s
 Exploring Themes with Topic Modeling,2022-2023,https://learn.scds.ca/text-analysis-3/,https://learn.scds.ca/text-analysis-3/assets/img/titleSlide.png,DMDS,Asynchronous Workshop,Data Analysis; Visualization,Voyant; MALLET; Python
 Transcending Mental Models,2021-2022,https://learn.scds.ca/transcending-mental-models/,TODO,RR,Recording,Research; Communication,N/A
 Data Sonification,2024-2025,https://learn.scds.ca/data-sonification/,https://learn.scds.ca/data-sonification/assets/img/titleSlide.jpg,DMDS,Asynchronous Workshop,Sonification,Two-Tone
+"Introducing Digital Scholarship 1: Digital Storytelling, Counter Narratives and Design Fictions",2024-2025,https://learn.scds.ca/dmds24-25/intro-ds1.html,https://learn.scds.ca/dmds24-25/assets/img/intro-ds1.png,DMDS,Recording,Podcasting;Storytelling;Digital Scholarship,N/A
+"Introducing Digital Scholarship 2: Data Analysis, Open-Source Tool Development, Platform Governance and Algorithmic Harms",2024-2025,https://learn.scds.ca/dmds24-25/intro-ds2.html,https://learn.scds.ca/dmds24-25/assets/img/intro-ds2.png,DMDS,Recording,Data Analysis,N/A
+Visualizing with Power BI,2024-2025,https://learn.scds.ca/dmds24-25/powerbi.html,https://learn.scds.ca/dmds24-25/assets/img/powerbi.png,DMDS,Recording,Visualization,Power BI
+"Cybersecurity, Critical Data, and Social Justice",2024-2025,https://learn.scds.ca/dmds24-25/data-justice.html,https://learn.scds.ca/dmds24-25/assets/img/data-justice.png,DMDS,Recording,Security,N/A
+Creating Exhibitions with Omeka S,2024-2025,https://learn.scds.ca/dmds24-25/omeka.html,https://learn.scds.ca/dmds24-25/assets/img/omeka.png,DMDS,Recording,Digital Exhibits,Omeka S
+Streamline Your Research Materials Photos,2024-2025,https://learn.scds.ca/dmds24-25/tropy.html,https://learn.scds.ca/dmds24-25/assets/img/tropy.png,DMDS,Recording,Digital Exhibits; Research,Tropy; Zotero; Omeka S
+Microdata Analysis with Python,2024-2025,https://learn.scds.ca/dash24-25/microdata-analysis.html,https://learn.scds.ca/dash24-25/assets/img/microdata-analysis.png,DASH,Recording,Data Analysis,Python; R
+"Finding, Accessing, and Adding GIS Data to Your Project",2024-2025,https://learn.scds.ca/dash24-25/gis-data.html,https://learn.scds.ca/dash24-25/assets/img/gis-data.png,DASH,Resource,GIS,Omeka S
+Visualizing with R gganimate,2024-2025,https://learn.scds.ca/dash24-25/gganimate.html,https://learn.scds.ca/dash24-25/assets/img/gganimate.png,DASH,Recording,Visualization,R; gganimate
+Digital Networking and You,2021-2022,https://echo360.ca/media/2c508787-bddb-4678-9c63-505adc933a5a/public,TODO,SFS,Recording,Security; Websites,Wireshark
+Maintaining Your Digital Privacy,2021-2022,https://echo360.ca/media/9f2bc6af-a3ac-45e9-b50d-af2964108162/public,TODO,SFS,Recording,Privacy,N/A
+Getting Started with Text Preparation and Analysis,2021-2022,https://jasonbrodeur.github.io/dsi-text-prep/,TODO,ARL Digital Scholarship Institute,Asynchronous Workshop,Data Analysis,OpenRefine; Python
+A Guide to Data and Statistical Sources from Statistics Canada,2017-2018,https://libguides.mcmaster.ca/c.php?g=703562&p=5002203,TODO,LibGuides,Asynchronous Workshop,Data Analysis,N/A
+Business Data and Statistics,2022-2023,https://libguides.mcmaster.ca/c.php?g=704161,TODO,LibGuides,Asynchronous Workshop,Data Analysis,N/A
+Data Visualization,2023-2024,https://libguides.mcmaster.ca/dataviz,TODO,LibGuides,Asynchronous Workshop,Visualization,N/A
+GIS and Geospatial Data,2023-2024,https://libguides.mcmaster.ca/GIS,TODO,LibGuides,Resource,GIS,ArcGIS
+Research Data Management,2024-2025,https://library.mcmaster.ca/services/rdm,TODO,LibGuides,Resource,Research,N/A
+Reddit Data Scraper Tool,2022-2023,https://github.com/jbfink/r-extract,TODO,Other,Resource,Social Media; Data Analysis,Python

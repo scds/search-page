@@ -10,7 +10,7 @@ title: Search
 
 <div id="text-results-container">
   {% for series in seriesList %}
-    <h1>{{ series }}</h1>
+    <h1>{{ site.data.workshop_series[series] | default: series }}</h1>
     <ul>
     {% for page in workshops %}
       {% if page["Series"] == series %}

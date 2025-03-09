@@ -123,11 +123,23 @@ details.filter-dropdown {
 
 .text-list-result {
     color:#0d5d78;
-    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.text-list-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:1em !important;
 }
 
 ul > li::before {
     position: relative !important;
+    font-size: larger;
+    margin-left: -1em !important;
+}
+
+ul > li {
+    margin: unset;
 }
 
 @media only screen and (max-width: 750px) {

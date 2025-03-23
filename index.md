@@ -14,10 +14,13 @@ nav_order: 2
   <div class="search-container" id="search-container">
     <div class="search-container-left">
       <div class="mobile-search-container">
-        <input class="tool-search-input" type="text" id="search-inputt" placeholder="Search...">
-        <button onclick="toggleMobileFilter();" class="filter-button" type="button">🝖</button>
+        <label>
+          <input class="tool-search-input" type="text" id="search-inputt" placeholder="Search...">
+          <button onclick="toggleMobileFilter();" class="filter-button" type="button">🝖</button>
+        </label>
         <div class="filters-container-mobile">
           <fieldset>
+            <legend style="font-weight: bold; padding: 0em 0.5em">Filters</legend>
             <details class="filter-dropdown" id="yearsFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
             </details>
@@ -40,6 +43,7 @@ nav_order: 2
     <!-- Filters -->
     <div class="filters-container">
       <fieldset>
+        <legend style="font-weight: bold; padding: 0em 0.5em">Filters</legend>
         <details open class="filter-dropdown" id="yearsFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
         </details>
@@ -88,9 +92,9 @@ $.getJSON('data.json', function(obj) {
       searchResultTemplate: '<!--{title}, {url}-->
       <div class="result-tile">
         <a target="_parent" href="{url}" class="result-link">
-        <object data="{image}" type="image/png" height="auto" width="100%" class="result-image">
-          <object data="assets/img/{series_image}_image.png" type="image/png" height="auto" width="100%" class="result-image">
-            <img src="assets/img/unknownImageLocation.png" height="100%" class="result-image">
+        <object data="{image}" type="image/png" height="auto" width="100%" class="result-image" alt="workshop image for {title}">
+          <object data="assets/img/{series_image}_image.png" type="image/png" height="auto" width="100%" class="result-image" alt="{series_image} logo for workshop with no specified image.">
+            <img src="assets/img/unknownImageLocation.png" height="100%" class="result-image" alt="Sherman Center logo for workshop with no specified image.">
           </object>
         </object>
         <p class="result-title">{title}</p>

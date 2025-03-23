@@ -648,3 +648,13 @@ function toggleMobileFilter() {
       filtersMenu.style.display = "none";
     }
 }
+
+function onResize() {
+    let filtersMenu = document.getElementsByClassName("filters-container-mobile")[0];
+    if(window.innerWidth > 750 && filtersMenu.style.display == "block") {
+      filtersMenu.style.display = "none";
+    };
+
+
+}
+window.onresize = onResize;

@@ -110,6 +110,11 @@ $.getJSON('data.json', function(obj) {
         if (prop === 'topics') {
           var strr = "";
           function createTopics(topic) { strr = strr.concat(topic, ", ");  }
+          if(value == "N/A") {
+            return strr;
+          } else {
+            strr = " - ";
+          }
           value = value.split("; ");
           value.forEach(createTopics);
           return strr.slice(0, -2);

@@ -99,7 +99,7 @@ $.getJSON('data.json', function(obj) {
         </object>
         <p class="result-title">{title}</p>
         </a>
-        <p class="result-details"> {series} - {year} - {topics} {software} </p>
+        <p class="result-details"> {series} - {year} {topics} {software} </p>
       </div>
       ',
       templateMiddleware: function(prop, value, template) {

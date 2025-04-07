@@ -1,7 +1,7 @@
 ---
 layout: minimal
 title: Search
-nav_order: 2
+nav_order: 2 
 ---
 
 <link rel="stylesheet" href="./assets/css/widget.css">

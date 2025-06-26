@@ -546,10 +546,18 @@
       }
 
       years.sort();
-      series.sort((a, b) => counts[b] - counts[a]);
+
+      /* Sort  by frequency */
+      //software.sort((a, b) => counts[b] - counts[a]);
       //topics.sort((a, b) => counts[b] - counts[a]);
+      //series.sort((a, b) => counts[b] - counts[a]);
+
+      /* Sort by alphabetical order */
+
+      series.sort((a, b) => a.localeCompare(b));
+      software.sort((a,b) => a.localeCompare(b));
       topics.sort((a, b) => a.localeCompare(b));
-      software.sort((a, b) => counts[b] - counts[a]);
+      
 
       addFilter("year", years, yearsContainer, counts)
       addFilter("year", years, yearsContainerMobile, counts)

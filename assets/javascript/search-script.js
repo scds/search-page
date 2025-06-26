@@ -547,7 +547,8 @@
 
       years.sort();
       series.sort((a, b) => counts[b] - counts[a]);
-      topics.sort((a, b) => counts[b] - counts[a]);
+      //topics.sort((a, b) => counts[b] - counts[a]);
+      topics.sort((a, b) => a.localeCompare(b));
       software.sort((a, b) => counts[b] - counts[a]);
 
       addFilter("year", years, yearsContainer, counts)

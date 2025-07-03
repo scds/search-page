@@ -36,12 +36,8 @@
   function inFilter(value) {
     for(const filterKey in filters) {
       if(filters[filterKey].length != 0) {
-        let all_values = [];
-  
-        if (value[filterKey] && value[filterKey].trim().length > 0) {
-          all_values = value[filterKey].split(";").map(x => x.trim());
-        }
-  
+        let all_values = value[filterKey].split(";");
+        all_values = all_values.map((x) => x.trim());
         let in_filter = false;
         for(let i = 0; i < all_values.length; i++) {
           if(filters[filterKey].includes(all_values[i])) {
@@ -54,9 +50,9 @@
         }
       }
     }
-    return true;
+
+    return true
   }
-  
   
   const options = {}
   options.pattern = /\{(.*?)\}/g

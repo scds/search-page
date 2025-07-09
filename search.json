@@ -2,7 +2,7 @@
 layout: none
 ---
 [
-  {% assign workshops = site.data.workshop_list_scratch}
+  {% assign workshops = site.data.workshop_list_scratch%}
   {% for workshop in workshops %}
     {% assign title = workshop.Title | strip_newlines | remove: '"' %}
     {% if workshop.URL != "NA" %}

@@ -465,6 +465,7 @@
     }
 
     function initWithJSON (json) {
+      json.reverse()
       _$Repository_4.put(json)
       registerInput()
 

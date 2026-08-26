@@ -121,7 +121,7 @@ $.getJSON('data.json', function(obj) {
 
         if (prop === 'topics') {
           var strr = "";
-          function createTopics(topic) { strr = strr.concat(topic, ", ");  }
+          function createTopics(topics) { strr = strr.concat(topics, ", ");  }
           if(value == "N/A") {
             return strr;
           } else {

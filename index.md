@@ -67,8 +67,9 @@ nav_order: 2
         </details>
         <!-- <details class="filter-dropdown" id="certificateFilters"> -->
               <!-- <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary> -->
-           <!-- </details>*/ -->
+           <!-- </details> -->
       </fieldset>
+      <!-- <div class="sidebar-footer-spacer"></div> -->
     </div>
   </div>
 </div>
@@ -121,7 +122,7 @@ $.getJSON('data.json', function(obj) {
 
         if (prop === 'topics') {
           var strr = "";
-          function createTopics(topics) { strr = strr.concat(topics, ", ");  }
+          function createTopics(topic) { strr = strr.concat(topic, ", ");  }
           if(value == "N/A") {
             return strr;
           } else {

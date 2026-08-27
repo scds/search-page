@@ -8,8 +8,9 @@ hr {
 }
 
 .search-filter-container {
-    height: 800px; 
-    overflow-y: clip;
+    height: auto; 
+    min-height: calc(100vh - 120px);
+    overflow: visible;
 }
 
 .search-container {
@@ -37,17 +38,19 @@ hr {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: max-content max-content max-content max-content; 
-    overflow-y: scroll; 
-    height: 740px;
+    overflow-y: auto; 
+    height: calc(100vh - 120px);
+    padding: 1em;
 }
 
 #text-results-container {
     overflow-y: scroll; 
-    height: 740px;
+    height: auto;
     width: 100%;
 }
 
 .filters-container {
+    height: calc(100vh - 80px);
     width: 30%; 
     font-size: small; 
     overflow-y: scroll;
@@ -164,8 +167,8 @@ ul > li {
         display: grid; 
         grid-template-columns: 1fr; 
         grid-template-rows: max-content;
-        overflow-y: hidden;
-        height: 100%;
+        overflow-y: auto;
+        height: auto;
     }
 
     .filter-button {
